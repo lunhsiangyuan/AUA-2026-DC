@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="zh-TW"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>AUA 2026 Meeting Survival Guide</title>
+<style>
+:root{--pri:#466E82;--acc:#7D3269;--bg:#FDFDFD;--card:#fff;--bd:#e8e4df;--tx:#2a2a2a;--dm:#8b8380;--gd:#b45309;--gn:#2d6a4f;--bl:#2563eb;--pk:#7D3269;--pklt:#f3e5ef;--warm:#faf8f5;--wbd:#f0ece7}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Brandon Grotesque',-apple-system,'PingFang TC','Noto Sans TC',sans-serif;background:var(--bg);color:var(--tx);font-size:14px;line-height:1.65}
+.ct{max-width:960px;margin:0 auto;padding:20px 24px 60px}
+h1{font-size:1.5rem;color:var(--pri);margin-bottom:3px;letter-spacing:.5px}
+.sub{color:var(--dm);font-size:.82rem;margin-bottom:16px}
+.tabs{display:flex;gap:5px;margin-bottom:18px;overflow-x:auto;flex-wrap:wrap}
+.tb{padding:9px 18px;cursor:pointer;font-size:.82rem;font-weight:600;background:var(--card);color:var(--dm);border:1px solid var(--bd);white-space:nowrap;transition:all .2s}
+.tb:hover{border-color:var(--acc);color:var(--acc)}
+.tb.on{background:var(--acc);color:#fff;border-color:var(--acc)}
+.dp{display:none;animation:fadeIn .2s ease}.dp.on{display:block}
+@keyframes fadeIn{from{opacity:0}to{opacity:1}}
+
+/* Narrative content */
+.prose{font-size:.92rem;line-height:1.75;color:#444;margin-bottom:16px}
+.prose strong{color:var(--tx)}
+
+/* Section headers */
+.sh{font-size:1.15rem;color:var(--pri);font-weight:700;margin:28px 0 10px;padding-bottom:6px;border-bottom:2px solid var(--wbd);letter-spacing:.3px}
+.sh:first-of-type{margin-top:16px}
+.sh3{font-size:.95rem;color:var(--pri);font-weight:700;margin:20px 0 8px;letter-spacing:.2px}
+.sh4{font-size:.84rem;color:var(--dm);font-weight:700;margin:14px 0 6px;text-transform:uppercase;letter-spacing:.5px}
+
+/* Tables */
+table{width:100%;border-collapse:collapse;margin:10px 0 18px;font-size:.84rem}
+th{background:var(--wbd);color:var(--pri);text-align:left;padding:9px 12px;border:1px solid var(--bd);font-weight:700;font-size:.76rem;text-transform:uppercase;letter-spacing:.5px}
+td{padding:8px 12px;border:1px solid #ebe7e2;vertical-align:top}
+tr:hover td{background:var(--warm)}
+
+/* Cards */
+.card{background:var(--card);border:1px solid var(--bd);padding:16px 20px;margin:10px 0;box-shadow:0 1px 4px rgba(0,0,0,.03)}
+.card-acc{border-left:3px solid var(--acc)}
+.card-gn{border-left:3px solid var(--gn)}
+.card-gd{border-left:3px solid var(--gd)}
+.card-bl{border-left:3px solid var(--bl)}
+
+/* Badges */
+.badge{display:inline-block;background:var(--acc);color:#fff;font-size:.65rem;padding:2px 7px;font-weight:600;letter-spacing:.3px;vertical-align:middle;margin-left:4px}
+.badge-gn{background:var(--gn)}
+.badge-gd{background:var(--gd)}
+.badge-bl{background:var(--bl)}
+
+/* Tips */
+.tip{background:#fef9c3;border-left:3px solid var(--gd);padding:10px 16px;margin:12px 0;font-size:.84rem;color:#7c6a1f}
+.tip strong{color:var(--gd)}
+
+/* Star ratings */
+.star{color:var(--gd)}
+
+/* Wikilink */
+.wl{color:var(--acc);cursor:pointer;text-decoration:none;border-bottom:1px dotted var(--acc);font-weight:600}
+.wl:hover{color:var(--pri);border-color:var(--pri)}
+
+/* Lists */
+ul,ol{margin:8px 0 12px 18px}
+li{margin-bottom:5px}
+.checklist{list-style:none;margin-left:0}
+.checklist li{padding:4px 0;font-size:.88rem}
+.checklist li::before{content:'☐ ';color:var(--dm)}
+
+/* Legend bar */
+.lg{display:flex;gap:16px;flex-wrap:wrap;font-size:.76rem;color:var(--dm);margin-bottom:14px;padding:10px 16px;background:var(--card);border:1px solid var(--bd)}
+.lg span{display:flex;align-items:center;gap:5px}
+.d{width:12px;height:12px;display:inline-block}
+
+/* Free label */
+.free{color:var(--gn);font-weight:700}
+/* Emergency */
+.emergency{color:#dc2626;font-weight:700;font-size:1.1rem}
+
+/* Maps */
+.map-img{width:100%;max-width:700px;border:1px solid var(--bd);margin:12px 0;box-shadow:0 2px 8px rgba(0,0,0,.06)}
+.map-caption{font-size:.78rem;color:var(--dm);margin:-8px 0 16px;font-style:italic}
+.floor-overview{width:100%;margin:16px 0}
+.floor-overview .floor-row{display:flex;align-items:stretch;margin-bottom:3px}
+.floor-overview .floor-label{width:110px;min-width:110px;padding:10px 12px;font-size:.78rem;font-weight:700;color:#fff;display:flex;align-items:center;letter-spacing:.3px}
+.floor-overview .floor-content{flex:1;padding:10px 14px;background:var(--card);border:1px solid var(--bd);font-size:.82rem;line-height:1.5}
+.floor-overview .floor-content strong{color:var(--tx)}
+.floor-overview .fl-lower .floor-label{background:#466E82}
+.floor-overview .fl-conc .floor-label{background:#5a8a9e}
+.floor-overview .fl-l1 .floor-label{background:#7D3269}
+.floor-overview .fl-l2 .floor-label{background:#b45309}
+.floor-overview .fl-l3 .floor-label{background:#2d6a4f}
+.floor-tag{display:inline-block;font-size:.68rem;padding:1px 6px;margin:0 2px;border-radius:3px;font-weight:600}
+.ft-food{background:#fef9c3;color:#92400e}
+.ft-session{background:var(--pklt);color:var(--acc)}
+.ft-coffee{background:#dbeafe;color:#1e40af}
+.ft-exhibit{background:#d1fae5;color:#065f46}
+
+@media(max-width:768px){
+  .ct{padding:12px 12px 40px}
+  .tabs{gap:3px}
+  .tb{padding:7px 12px;font-size:.78rem}
+  table{font-size:.78rem}
+  th,td{padding:6px 8px}
+}
+</style></head><body>
+<div class="ct">
+<h1>AUA 2026 Meeting Survival Guide</h1>
+<div class="sub">美國泌尿科醫學會年會 · Washington DC · May 14–18, 2026 · 會場生存指南</div>
+
+<div class="lg">
+<span><span class="d" style="background:var(--acc)"></span>推薦場次</span>
+<span><span class="d" style="background:var(--gn)"></span>免費餐飲</span>
+<span><span class="d" style="background:var(--gd)"></span>Pro Tip</span>
+<span style="margin-left:auto;color:var(--acc);font-weight:600">👆 點 tab 切換主題</span>
+</div>
+
+<div class="tabs">
+<div class="tb on" onclick="sd('home')">🏠 Overview</div>
+<div class="tb" onclick="sd('food')">🍽️ Food & Beverage</div>
+<div class="tb" onclick="sd('symposia')">⭐ Industry Symposia</div>
+<div class="tb" onclick="sd('square')">🏛️ The Square</div>
+<div class="tb" onclick="sd('history')">🚀 History Exhibit</div>
+<div class="tb" onclick="sd('local')">🏥 Local Resources</div>
+<div class="tb" onclick="sd('safety')">🔒 Safety</div>
+<div class="tb" onclick="sd('app')">📱 App</div>
+<div class="tb" onclick="sd('cme')">🎓 CME</div>
+<div class="tb" onclick="sd('maps')">🗺️ Maps</div>
+</div>
+
+<!-- HOME -->
+<div class="dp on" id="home">
+<p class="prose">五月的 Washington DC，Walter E. Washington Convention Center 會湧進上萬名泌尿科醫師。這份指南不是官方手冊的翻譯——而是一個跑過三次 AUA 的人會想知道的東西：哪裡有免費咖啡、急診怎麼去、哪些 satellite symposia 值得用晚餐時間換。</p>
+<p class="prose">會議時間是 <strong>5/14（Thu）到 5/18（Mon）</strong>，但真正的學術密度集中在 Fri–Sun 三天。Monday 只剩半天 wrap-up，大多數人 Sunday 晚上就走了。</p>
+
+<div class="sh">會場結構</div>
+<table>
+<tr><th>樓層</th><th>重點設施</th></tr>
+<tr><td><strong>Lower Level</strong></td><td>S&T Hall（展覽 + poster）+ <span class="wl" onclick="sd('square')">The Square</span> + <span class="wl" onclick="sd('food')">AUA Café</span></td></tr>
+<tr><td><strong>Concourse</strong></td><td>Hall A/B 通道 + The Exchange</td></tr>
+<tr><td><strong>Level 1</strong></td><td>Salon 系列（<span class="wl" onclick="sd('symposia')">satellite symposia</span>）+ ☕ Starbucks + Le Colombe</td></tr>
+<tr><td><strong>Level 2</strong></td><td><strong>Plenary</strong>（主會場）+ Uptown Dining District</td></tr>
+<tr><td><strong>Level 3</strong></td><td>Ballroom A（satellite symposia）</td></tr>
+</table>
+
+<div class="sh">行前 Checklist</div>
+<ul class="checklist">
+<li>下載 <span class="wl" onclick="sd('app')">AUA2026 App</span>（Apple / Google Play）</li>
+<li>訂閱 <span class="wl" onclick="sd('safety')">AlertDC</span> 緊急通知</li>
+<li>確認 <span class="wl" onclick="sd('symposia')">satellite symposia</span> 報名（免費晚餐場次）</li>
+<li>存好 <span class="wl" onclick="sd('local')">急診電話</span> 到手機</li>
+</ul>
+</div>
+
+<!-- FOOD -->
+<div class="dp" id="food">
+<p class="prose">AUA 年會最常見的抱怨不是 poster 太擠或 Wi-Fi 太慢——是「午餐時間找不到東西吃」。Convention Center 周邊餐廳不多，上萬人同時放飯。搞清楚會場內的咖啡和食物分佈，等於省下每天 30 分鐘排隊時間。</p>
+
+<div class="sh">☕ 咖啡地圖</div>
+<table>
+<tr><th>地點</th><th>樓層</th><th>開門</th><th>特色</th></tr>
+<tr><td><strong>AUA Café</strong></td><td>Lower Level, The Square</td><td>6:00–6:30a</td><td>最早開、最大間，也最多人</td></tr>
+<tr><td><strong>Bar Coffee</strong></td><td>Level 1, Rm 156 Foyer</td><td>6:30a</td><td>人少！Fri–Sun 限定</td></tr>
+<tr><td><strong>Le Colombe</strong></td><td>Level 1, Allen Y. Lew</td><td>7a</td><td>精品咖啡，品質好但貴</td></tr>
+<tr><td><strong>Starbucks</strong></td><td>Level 1, L St Doors</td><td>7a</td><td>穩定、可預期</td></tr>
+</table>
+<p class="prose">Le Colombe 和 Starbucks 全程開放（Thu–Mon, 7a–5p），不用擔心最後一天找不到咖啡。</p>
+
+<div class="sh">🍱 午餐選項</div>
+<div class="card card-gn">
+<strong>S&T Hall Bistros</strong>（Lower Level）— 3 個攤位分散在 Booth #107、#4309、The Square 附近。<strong>Fri–Sun 11a–3p</strong>。展覽廳裡面吃，邊吃邊逛 poster。
+</div>
+<div class="card card-bl">
+<strong>Uptown Dining District</strong>（Level 2, Plenary Foyer）— <strong>Thu–Sun 7a–5p，Mon 到 1p</strong>。比較不擠，因為大家都往 Lower Level 跑。
+</div>
+<div class="tip"><strong>💡 Pro tip</strong>：11:30 前沒搶到 Bistro → 直接上 Level 2 Uptown Dining District——同時段人潮少 30%。</div>
+
+<div class="sh">🆓 免費餐飲機會</div>
+<p class="prose">AUA 官方的 complimentary 不多，但 <strong>satellite symposia 幾乎都附餐</strong>。真正的免費午/晚餐藏在 <span class="wl" onclick="sd('symposia')">Industry Symposia</span> 裡。</p>
+<div class="card card-gn">
+<span class="free">FREE</span> <strong>Coffee Networking Break</strong> — Fri 5/15, 11:30a–1p, S&T Hall + 參展商攤位
+</div>
+
+<div class="sh">每層速查</div>
+<div class="sh3">Lower Level / Exhibit Level</div>
+<table>
+<tr><th>地點</th><th>時間</th><th>備註</th></tr>
+<tr><td>AUA Café</td><td>Thu–Sun, 最早 6a</td><td>Mon closed</td></tr>
+<tr><td>S&T Hall Bistros × 3</td><td>Fri–Sun, 11a–3p</td><td>午餐主力</td></tr>
+<tr><td>Product Theater #2701</td><td>Fri–Sun, 9:30a 起</td><td>每 45 min 一場</td></tr>
+</table>
+<div class="sh3">Concourse Level</div>
+<table>
+<tr><th>地點</th><th>時間</th></tr>
+<tr><td>The Exchange（Hall A/B 間）</td><td>Thu–Sun, 7a–4p</td></tr>
+</table>
+<div class="sh3">Level 1</div>
+<table>
+<tr><th>地點</th><th>時間</th></tr>
+<tr><td>Bar Coffee（Rm 156 Foyer）</td><td>Fri–Mon, 6:30a 起</td></tr>
+<tr><td>Le Colombe（Allen Y. Lew）</td><td>Thu–Mon, 7a–5p</td></tr>
+<tr><td>Starbucks（L St Doors）</td><td>Thu–Mon, 7a–5p</td></tr>
+</table>
+<div class="sh3">Level 2</div>
+<table>
+<tr><th>地點</th><th>時間</th></tr>
+<tr><td>Uptown Dining District（Plenary Foyer）</td><td>Thu–Sun 7a–5p, Mon 7a–1p</td></tr>
+</table>
+</div>
+
+<!-- SYMPOSIA -->
+<div class="dp" id="symposia">
+<p class="prose">Satellite symposia 是 AUA 年會的隱藏福利——藥廠贊助、附餐、有些還給 CME。缺點是內容難免帶商業色彩，但如果你本來就對那個 topic 有興趣，等於免費晚餐 + 聽一線 KOL 講最新數據。全部在 Level 1 Salon 系列（除了 Level 2/3 三場）。</p>
+
+<div class="sh">Friday 5/15</div>
+<table>
+<tr><th>時間</th><th>主題</th><th>地點</th><th>備註</th></tr>
+<tr style="background:var(--pklt)"><td>5:00–7:30p</td><td><strong>Mt Sinai 10th Annual Innovations in Robotic Surgery</strong> <span class="badge">推薦</span></td><td>Salon H</td><td>十年了還在辦，內容有料。Robotic surgery 主場</td></tr>
+<tr><td>5:30–7:00p</td><td>Breaking Barriers in cUTI Care</td><td>Salon C</td><td>Complicated UTI 新口服藥</td></tr>
+<tr><td>7:30–8:30p</td><td>Mt Sinai Endo Urology Stone Symposium</td><td>Salon H</td><td>接在 robotic 後面，不用換場</td></tr>
+</table>
+
+<div class="sh">Saturday 5/16</div>
+<table>
+<tr><th>時間</th><th>主題</th><th>地點</th><th>備註</th></tr>
+<tr style="background:var(--pklt)"><td>5:30–7:00p</td><td><strong>Next-Gen Treatment Pathways in Prostate Cancer</strong> <span class="badge">推薦</span></td><td>Salon H</td><td>mHSPC + mCRPC case-driven，跟 SAPA deck 直接相關</td></tr>
+<tr><td>5:30–7:00p</td><td>Maximizing NMIBC Outcomes</td><td>Salon C</td><td>和上面同時段，要二選一</td></tr>
+</table>
+
+<div class="sh">Sunday 5/17</div>
+<table>
+<tr><th>時間</th><th>主題</th><th>地點</th><th>備註</th></tr>
+<tr><td>7:30–9:30a</td><td>PSMA-Targeted PET & Radioligand Therapy Tumor Board</td><td>Level 2, 202A</td><td>Tumor board 互動形式</td></tr>
+<tr><td>7:30–9:30a</td><td>Second Opinion: Localized RCC</td><td>Level 3, Ballroom A</td><td>和 PSMA 同時段，選一個</td></tr>
+<tr style="background:#d1fae5"><td>12:00–1:00p</td><td><strong>Prostate Cancer Forum Industry Lunch</strong> <span class="badge badge-gn">免費午餐</span></td><td>Salon H</td><td class="free">免費午餐 + PCa，不去白不去</td></tr>
+<tr><td>1:00–2:00p</td><td>Bladder Cancer Forum Industry Lunch</td><td>Salon B</td><td>接在 PCa lunch 後面，可連吃兩場</td></tr>
+<tr><td>5:00–7:30p</td><td>Second Opinion: Prostate Cancer Management</td><td>Level 3, Ballroom A</td><td>最後一晚 investigators' perspectives</td></tr>
+</table>
+
+<div class="sh">⭐ 如果只能選三場</div>
+<div class="card card-acc">
+<strong>1. Fri — Mt Sinai Robotic Surgery</strong><br>核心專長 + 十週年特別版
+</div>
+<div class="card card-acc">
+<strong>2. Sat — Next-Gen Prostate Cancer Pathways</strong><br>mHSPC/mCRPC 最新 case 討論
+</div>
+<div class="card card-gn">
+<strong>3. Sun noon — Prostate Cancer Forum Lunch</strong><br>免費午餐 + networking
+</div>
+</div>
+
+<!-- THE SQUARE -->
+<div class="dp" id="square">
+<p class="prose">The Square 是 S&T Hall（展覽廳）的心臟地帶——把它想成醫院的 nurse station，所有人流交會的中心點。如果你跟別人約「在會場見」但沒指定地點，來 The Square 就對了。</p>
+
+<div class="sh">裡面有什麼</div>
+<ul>
+<li><strong>Member Central</strong> — 會員服務台，badge 問題都來這</li>
+<li><strong>Education Central + AUA Store</strong> — 教育資源 + 泌尿科主題周邊商品</li>
+<li><strong>Census / AQUA Registry Booth</strong> — 年度 census + Registry 數據展示</li>
+<li><strong>Publications Booth</strong> — JU, Urology Practice, JU Open Plus, AUANews</li>
+<li><strong>AUA Café</strong> — 最大的會場內餐飲點（見 <span class="wl" onclick="sd('food')">Food & Beverage</span>）</li>
+</ul>
+
+<div class="sh">🆕 2026 新增</div>
+<p class="prose">今年因為 The Square 太受歡迎，部分功能擴展到 <strong>Level 2 Plenary Foyer</strong>：</p>
+<div class="card card-gd">
+<strong>Urology Care Foundation Booth</strong> — 病人教育 + 人道計畫<br>
+<strong>AUA Advocacy Booth</strong> — 國會山 lobbying 進度 + 參與機會<br>
+<strong>Patient Perspectives Program</strong> — 病人 / caregiver 現身說法
+</div>
+<div class="card card-acc">
+<strong>Coding Corner</strong> <span class="badge badge-gd">NEW</span> — Level 1, Rm 151 Foyer<br>
+CPT / ICD-10 / HCPCS 專家即時諮詢。難得的面對面機會。
+</div>
+
+<div class="sh">開放時間</div>
+<table>
+<tr><th>日期</th><th>時間</th></tr>
+<tr><td>Thu 5/14</td><td>6:30a–6p</td></tr>
+<tr><td>Fri 5/15</td><td>6:00a–6p</td></tr>
+<tr><td>Sat 5/16</td><td>6:30a–4p</td></tr>
+<tr><td>Sun 5/17</td><td>6:30a–3:30p</td></tr>
+<tr><td>Mon 5/18</td><td>6:30a–Noon</td></tr>
+</table>
+<div class="tip"><strong>💡 注意</strong>：Sat/Sun 提早收。如果你要買 AUA Store 的東西，Friday 最寬裕。</div>
+</div>
+
+<!-- HISTORY -->
+<div class="dp" id="history">
+<p class="prose">每年 AUA 的 History Exhibit 都是隱藏寶石——大多數人匆匆走過，但停下來看十分鐘往往是整個會議最有趣的體驗。今年的主題更酷：<strong>太空人在太空中怎麼處理泌尿問題</strong>。</p>
+<p class="prose">展覽探索泌尿科在極端環境中的角色——太空、沙漠、極地、深海、高山、叢林。太空人面對的 urological challenges 出乎意料地多：微重力下的 renal stone formation 加速、太空衣內的排尿系統設計、長期太空旅行的 bone metabolism 對 calcium homeostasis 的影響。</p>
+
+<div class="sh">亮點</div>
+<div class="card card-acc">🚀 <strong>Apollo 太空衣實物</strong> — 真正的太空衣，不是複製品</div>
+<div class="card card-bl">🎤 <strong>Daily Talks</strong> — 每天有知名泌尿科醫師現場演講</div>
+<div class="card card-gd">🎁 <strong>Museum Store</strong> — 太空主題周邊：襪子、鑰匙圈、貼紙、徽章</div>
+
+<div class="sh">位置與時間</div>
+<p class="prose"><strong>Booth #2741</strong>，S&T Hall（Lower Level）。開放時間同 <span class="wl" onclick="sd('square')">The Square</span>。</p>
+
+<div class="sh">History of Urology Forum</div>
+<div class="card card-acc">
+<strong>Fri 5/15, 1–5 p.m., Room 143B</strong><br>
+四小時的正式 forum，不只是走走看看。對泌尿科歷史有興趣的別錯過。
+</div>
+</div>
+
+<!-- LOCAL RESOURCES -->
+<div class="dp" id="local">
+<p class="prose">身為醫師，你大概不會想到自己需要查「附近哪裡有急診」——但在異地出差，手機裡存好這些資訊是基本功。Convention Center 附近最近的 ER 要開 8 分鐘車。</p>
+
+<div class="sh">🏥 Hospitals（24 小時）</div>
+<table>
+<tr><th>醫院</th><th>地址</th><th>電話</th><th>距離</th></tr>
+<tr><td><strong>Howard University Hospital</strong></td><td>2041 Georgia Ave NW</td><td>202-865-6100</td><td>1.2 mi / 8 min</td></tr>
+<tr><td><strong>GW University Hospital</strong></td><td>900 23rd St NW</td><td>202-715-4000</td><td>1.9 mi / 13 min</td></tr>
+<tr><td><strong>MedStar Washington Hospital Center</strong></td><td>110 Irving St NW</td><td>202-877-7000</td><td>2.5 mi / 12 min</td></tr>
+</table>
+<div class="tip"><strong>💡</strong> Howard 最近但規模較小。<strong>GW 是 Level I Trauma Center</strong>，真正的急重症去那裡。</div>
+
+<div class="sh">🩺 Urgent Care（Mon–Sun 8a–8p）</div>
+<table>
+<tr><th>機構</th><th>地址</th><th>電話</th><th>距離</th></tr>
+<tr><td>MedStar UC Navy Yard</td><td>1103 Half St SE</td><td>855-910-3278</td><td>2.4 mi / 9 min</td></tr>
+<tr><td>MedStar UC Capitol Hill</td><td>228 7th St SE</td><td>855-910-3278</td><td>3.3 mi / 15 min</td></tr>
+</table>
+
+<div class="sh">🦷 Dentists</div>
+<table>
+<tr><th>機構</th><th>地址</th><th>電話</th><th>時間</th></tr>
+<tr><td>Washington Center for Dentistry</td><td>1430 K St NW 8F</td><td>202-223-6630</td><td>Mon–Fri 7a–5p</td></tr>
+<tr><td>Tend Dental 14th & U</td><td>1439 U St NW</td><td>202-539-9865</td><td>Mon–Sat</td></tr>
+</table>
+
+<div class="sh">⛪ 宗教場所（步行範圍）</div>
+<table>
+<tr><th>教派</th><th>名稱</th><th>距離</th></tr>
+<tr><td>Catholic</td><td>Immaculate Conception Church</td><td>0.4 mi</td></tr>
+<tr><td>Episcopal</td><td>Church of the Ascension & Saint Agnes</td><td>0.3 mi</td></tr>
+<tr><td>Presbyterian</td><td>Grace Downtown Church</td><td>0.3 mi</td></tr>
+<tr><td>Synagogue</td><td>Sixth & I</td><td>0.3 mi</td></tr>
+<tr><td>Mosque</td><td>American Fazl Mosque</td><td>2 mi（需搭車）</td></tr>
+</table>
+
+<div class="sh">📞 緊急電話</div>
+<table>
+<tr><th>類型</th><th>號碼</th></tr>
+<tr><td class="emergency">Emergency</td><td class="emergency">911</td></tr>
+<tr><td>Non-Emergency</td><td><strong>311</strong></td></tr>
+</table>
+</div>
+
+<!-- SAFETY -->
+<div class="dp" id="safety">
+<p class="prose">DC 每年接待數百萬遊客，整體治安不差，但 Convention Center 附近的 Mt Vernon Triangle / Shaw 區域不算最安全。AUA 官方特別強調的幾件事，翻成白話就是：「這裡人多手雜，管好你的東西。」</p>
+
+<div class="sh">🔐 公共場所防竊</div>
+<ul>
+<li><strong>手機不要邊走邊滑</strong> — DC 街頭搶手機是真實存在的犯罪模式</li>
+<li><strong>皮夾放前口袋</strong>，肩背包夾腋下（不要掛椅背）</li>
+<li><strong>不戴貴重珠寶出門</strong></li>
+<li><strong>ATM 選白天、人多的地方</strong></li>
+<li><strong>出門前規劃路線</strong>（地圖/app）</li>
+</ul>
+
+<div class="sh">🏨 飯店安全</div>
+<ul>
+<li><strong>門縫塞的傳單可能是釣魚</strong> — 不明 food/business flyer 立刻通報前台</li>
+<li><strong>飯店永遠不會打電話跟你要信用卡號</strong> — check-in 後索取個資 = 詐騙</li>
+<li><strong>確認正確 Wi-Fi 再連</strong> — 假 Wi-Fi hotspot 是會議飯店常見攻擊向量</li>
+<li>出門掛「Do Not Disturb」+ 留燈 + 開電視</li>
+</ul>
+
+<div class="sh">🚨 AlertDC 緊急通知</div>
+<p class="prose">DC 的 Homeland Security 提供 <strong>AlertDC</strong> 系統，訪客也可以訂閱 email 或 text 通知。DC 有 <strong>19 條疏散路線</strong>，路上有標示。</p>
+<div class="tip"><strong>💡 建議出發前就註冊</strong>，到了現場才不會手忙腳亂。</div>
+
+<div class="sh">📞 緊急聯繫</div>
+<table>
+<tr><th>類型</th><th>號碼</th></tr>
+<tr><td class="emergency">Emergency</td><td class="emergency">911</td></tr>
+<tr><td>Non-Emergency</td><td><strong>311</strong></td></tr>
+</table>
+</div>
+
+<!-- APP -->
+<div class="dp" id="app">
+<p class="prose">AUA 的官方 App 用 Swapcard 平台建的——同一個平台也管 abstract submission 和線上議程。App 已經上線，<strong>現在就可以下載並開始排行程</strong>。</p>
+
+<div class="sh">功能</div>
+<ul>
+<li><strong>完整議程</strong> + 依主題 / Track / 日期篩選</li>
+<li><strong>個人行程設定</strong> — 選好的 session 同步到手機 calendar</li>
+<li><strong>Wayfinding</strong> — Convention Center + Marriott Marquis 室內導航</li>
+<li><strong>Speaker 資訊</strong> — 講者簡介 + 其他場次</li>
+<li><strong>Live Stream</strong> — 部分場次直播 + 隨選回放（5/14–8/31）</li>
+<li><strong>Social</strong> — 跟其他與會者連線、發訊息</li>
+</ul>
+
+<div class="sh">下載</div>
+<table>
+<tr><th>平台</th><th>方法</th></tr>
+<tr><td><strong>iOS</strong></td><td>App Store 搜尋 "AUA2026"</td></tr>
+<tr><td><strong>Android</strong></td><td>Google Play 搜尋 "AUA2026"</td></tr>
+<tr><td><strong>Web</strong></td><td>線上版（不需安裝）</td></tr>
+</table>
+<div class="tip"><strong>💡</strong> 建議出發前就登入、設好行程。到了會場 Wi-Fi 擁擠時，至少行程資料已經在本機。</div>
+</div>
+
+<!-- CME -->
+<div class="dp" id="cme">
+<p class="prose">AUA 年會是 ACCME 認證的 CME 活動，所有 session 都可以拿 <strong>AMA PRA Category 1 Credits™</strong>。對台灣醫師來說，這些學分回去換算成台灣繼教學分需要另外申請，但 AUA 的 Certificate of Attendance (COA) 本身就是很好的佐證文件。</p>
+
+<div class="sh">怎麼拿學分</div>
+<div class="card card-acc">
+<strong>Step 1</strong> — 參加 session（現場、直播、或隨選）<br>
+<strong>Step 2</strong> — 完成 credit claim attestation + 評估問卷<br>
+<strong>Step 3</strong> — 學分自動記錄到你的 AUA 帳號
+</div>
+<p class="prose">可追溯期間：<strong>5/14–8/31</strong>。錯過的 session 可以在 8 月底前看隨選回放再 claim。</p>
+
+<div class="sh">認證細節</div>
+<table>
+<tr><th>項目</th><th>內容</th></tr>
+<tr><td>認證機構</td><td>ACCME（透過 AUA）</td></tr>
+<tr><td>學分類型</td><td>AMA PRA Category 1 Credits™</td></tr>
+<tr><td>總學分數</td><td>TBD（官方尚未公布）</td></tr>
+<tr><td>非 MD/DO</td><td>可發 participation documentation，非正式 CME</td></tr>
+</table>
+
+<div class="sh">學習目標</div>
+<ul>
+<li>分析泌尿科最新 medical & surgical management 發展</li>
+<li>評估新技術在泌尿疾病治療的適用性</li>
+<li>將最新 guidelines 整合到臨床實踐</li>
+<li>在 shared decision-making 中融入 evidence-based research</li>
+</ul>
+<div class="tip"><strong>💡</strong> 部分 session 可能包含 off-label drug/device 使用。講者 COI disclosure 會在活動前一週上線。</div>
+</div>
+
+<!-- MAPS -->
+<div class="dp" id="maps">
+<p class="prose">Walter E. Washington Convention Center 是一棟巨大的建築，南北跨好幾個街區。會議活動分散在五個樓層，搞清楚哪層有什麼是第一天不迷路的關鍵。</p>
+
+<div class="sh">樓層總覽</div>
+<div class="floor-overview">
+<div class="floor-row fl-l3">
+<div class="floor-label">Level 3</div>
+<div class="floor-content">
+<strong>Ballroom A</strong> — Satellite Symposia（Sun 5/17）<span class="floor-tag ft-session">Symposia</span>
+</div>
+</div>
+<div class="floor-row fl-l2">
+<div class="floor-label">Level 2</div>
+<div class="floor-content">
+<strong>Hall D — Plenary</strong>（主會場）<span class="floor-tag ft-session">Plenary</span> ·
+<strong>Uptown Dining District</strong>（Plenary Foyer）<span class="floor-tag ft-food">午餐</span> ·
+<strong>Room 202A</strong>（PSMA Tumor Board）·
+<strong>Room 206, 207A/B</strong>（Podium sessions）·
+<strong>Hall E</strong>（Business Suites）
+</div>
+</div>
+<div class="floor-row fl-l1">
+<div class="floor-label">Level 1</div>
+<div class="floor-content">
+<strong>Salon B/C/H</strong> — <span class="wl" onclick="sd('symposia')">Satellite Symposia 主場</span> <span class="floor-tag ft-session">Symposia</span> ·
+<strong>Starbucks</strong>（L St Doors）<span class="floor-tag ft-coffee">☕</span> ·
+<strong>Le Colombe</strong>（Allen Y. Lew Entrance）<span class="floor-tag ft-coffee">☕</span> ·
+<strong>Bar Coffee</strong>（Rm 156 Foyer）<span class="floor-tag ft-coffee">☕</span> ·
+<strong>Rooms 103A/B</strong> ·
+<strong>Rooms 143–152</strong>（IC / Focus On / Forum）·
+<strong>Coding Corner</strong>（Rm 151 Foyer）
+</div>
+</div>
+<div class="floor-row fl-conc">
+<div class="floor-label">Concourse</div>
+<div class="floor-content">
+<strong>The Exchange</strong>（Hall A/B Foyers 間）<span class="floor-tag ft-food">餐飲</span> ·
+連接 Lower Level ↔ Level 1 的主要通道
+</div>
+</div>
+<div class="floor-row fl-lower">
+<div class="floor-label">Lower Level</div>
+<div class="floor-content">
+<strong>Hall A/B/C — S&T Hall</strong>（展覽 + Poster）<span class="floor-tag ft-exhibit">展覽</span> ·
+<strong>The Square</strong>（Hall B 中心）<span class="floor-tag ft-exhibit">中樞</span> ·
+<strong>AUA Café</strong>（The Square 內）<span class="floor-tag ft-food">餐飲</span> ·
+<strong>Bistros × 3</strong>（#107, #4309, The Square）<span class="floor-tag ft-food">午餐</span> ·
+<strong>Product Theater</strong>（Booth #2701）·
+<strong>History Exhibit</strong>（Booth #2741）
+</div>
+</div>
+</div>
+
+<div class="sh">S&T Hall 互動地圖</div>
+<div class="card card-bl">
+<strong>MapYourShow 互動地圖</strong> — 可搜尋展商、booth 編號、設施位置<br>
+<a href="https://aua2026.mapyourshow.com/8_0/floorplan/index.cfm" target="_blank" style="color:var(--bl);font-weight:600">▸ 開啟互動式 S&T Hall Floor Plan（外部連結）</a>
+</div>
+
+<div class="sh">Level 1 平面圖 — 南區（Room 103 / Salon G–I）</div>
+<img class="map-img" src="../images/maps/venue-map-main.jpg" alt="Convention Center Level 1 South — Room 103, Salon G/H/I">
+<div class="map-caption">L Street 南側：Room 103A/B、Salon G/H/I（Satellite Symposia 主場）· ⭐ = Mamava Pod 位置</div>
+
+<div class="sh">Level 1 平面圖 — 北區（Room 140–156）</div>
+<img class="map-img" src="../images/maps/venue-map-middle.jpg" alt="Convention Center Level 1 North — Room 140-156">
+<div class="map-caption">L Street 北側：Room 140A/B、141–143B、145–146A、Room 156（Bar Coffee 在這）· ⭐ = Mamava Pod 位置</div>
+
+<div class="sh">關鍵路線</div>
+<table>
+<tr><th>從</th><th>到</th><th>怎麼走</th></tr>
+<tr><td>S&T Hall (Lower)</td><td>Plenary (Level 2)</td><td>搭 Concourse 手扶梯上兩層，或走 Hall B Foyer 電梯</td></tr>
+<tr><td>Plenary (Level 2)</td><td>Salon H (Level 1)</td><td>下一層，往南走到 L St 側</td></tr>
+<tr><td>Registration</td><td>The Square</td><td>Registration 在 The Square 內（Lower Level, Hall B）</td></tr>
+<tr><td>Convention Center</td><td>Marriott Marquis</td><td>9th St 地下通道直通，不用出門淋雨</td></tr>
+</table>
+<div class="tip"><strong>💡</strong> Convention Center ↔ Marriott Marquis 有地下通道，下雨也不怕。從 Concourse Level 9th St 側進入。</div>
+</div>
+
+</div><!-- .ct -->
+
+<script>
+function sd(id){
+  document.querySelectorAll('.dp').forEach(d=>d.classList.remove('on'));
+  document.querySelectorAll('.tb').forEach(t=>t.classList.remove('on'));
+  document.getElementById(id).classList.add('on');
+  const tabs=document.querySelectorAll('.tb');
+  const map={home:0,food:1,symposia:2,square:3,history:4,local:5,safety:6,app:7,cme:8,maps:9};
+  if(map[id]!==undefined)tabs[map[id]].classList.add('on');
+  window.scrollTo(0,0);
+}
+</script>
+</body></html>
