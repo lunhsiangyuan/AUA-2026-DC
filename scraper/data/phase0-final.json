@@ -1,0 +1,17 @@
+{
+  "loginWorking": false,
+  "loginIssue": "Swapcard login modal shows 'Oops, something went wrong' in headless browser",
+  "htmlDescriptionAvailable": false,
+  "summaryAvailable": false,
+  "apiEndpoints": {
+    "public": "https://api.swapcard.com/graphql",
+    "app": "https://app.swapcard.com/api/graphql"
+  },
+  "recommendation": "Use API without login. Full text may require login via real browser.",
+  "sampleAbstract": {
+    "id": "UGxhbm5pbmdfNDM4NDcyNg==",
+    "title": "IP04-01: Assistance of Large Language Model-based AI Agent in Preoperative Communication Reduces Anxiety of Prostate Cancer Patients and Workload of Clinicians: A Prospective, Randomized, Phase II Trial",
+    "htmlDescription": "",
+    "summary": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "name": "aua2026-scraper",
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "phase0": "bun run src/00-login.ts",
+    "phase1": "bun run src/01-collect-ids.ts",
+    "phase2": "bun run src/02-extract.ts",
+    "phase3": "bun run src/03-transform.ts",
+    "scrape": "bun run src/02-extract.ts && bun run src/03-transform.ts"
+  },
+  "dependencies": {
+    "playwright": "^1.52.0",
+    "cheerio": "^1.0.0"
+  }
+}
