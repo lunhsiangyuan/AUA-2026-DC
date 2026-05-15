@@ -1,0 +1,5 @@
+node_modules/
+scraper/data/posters/
+scraper/data/journal-abstracts/toc-cache/
+scraper/data/journal-abstracts/checkpoint-*.json
+.claude/
