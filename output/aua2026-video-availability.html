@@ -1,0 +1,2300 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AUA 2026 Video Availability Manifest</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101416;
+      --panel: #182025;
+      --panel-2: #202a30;
+      --text: #edf4f5;
+      --muted: #aab8bc;
+      --line: #334148;
+      --accent: #69c3b1;
+      --warn: #f0bc66;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font: 15px/1.55 -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+    }
+    main { width: min(1180px, calc(100vw - 32px)); margin: 0 auto; padding: 28px 0 48px; }
+    h1 { margin: 0 0 8px; font-size: clamp(26px, 5vw, 44px); font-weight: 750; }
+    h2 { margin: 28px 0 12px; font-size: 20px; }
+    p { margin: 0 0 12px; color: var(--muted); }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .summary {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 10px;
+      margin: 22px 0;
+    }
+    .metric {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      padding: 14px;
+    }
+    .metric span { display: block; color: var(--muted); font-size: 13px; }
+    .metric strong { display: block; margin-top: 4px; font-size: 28px; }
+    .notice {
+      border-left: 4px solid var(--warn);
+      background: #2a251b;
+      padding: 12px 14px;
+      border-radius: 6px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      margin: 18px 0;
+    }
+    input {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      color: var(--text);
+      padding: 11px 12px;
+      font: inherit;
+    }
+    .session-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      margin: 10px 0;
+      overflow: hidden;
+    }
+    .session-head {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      border: 0;
+      background: var(--panel-2);
+      color: var(--text);
+      padding: 13px 14px;
+      text-align: left;
+      font: inherit;
+      cursor: pointer;
+    }
+    .session-head strong { color: var(--accent); white-space: nowrap; }
+    .session-body { display: none; padding: 14px; }
+    .session-card.open .session-body { display: block; }
+    .status-line { color: var(--warn); }
+    ol { margin: 0; padding-left: 24px; }
+    li { margin: 8px 0; }
+    li span {
+      display: inline-block;
+      margin-left: 8px;
+      padding: 1px 7px;
+      border-radius: 999px;
+      background: #2c353a;
+      color: var(--muted);
+      font-size: 12px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: block;
+      max-height: 520px;
+      overflow-y: auto;
+    }
+    thead { position: sticky; top: 0; background: var(--panel-2); }
+    th, td { padding: 9px 10px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
+    th { color: var(--muted); font-size: 12px; text-transform: uppercase; }
+    td:nth-child(2) { min-width: 360px; }
+    @media (max-width: 720px) {
+      main { width: min(100vw - 20px, 680px); padding-top: 18px; }
+      .session-head { align-items: flex-start; flex-direction: column; }
+      table { font-size: 13px; }
+      th, td { padding: 8px; }
+      td:nth-child(2) { min-width: 260px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>AUA 2026 Video Availability Manifest</h1>
+    <p>Generated 2026-05-16T13:05:52+00:00 from <code>output/aua2026-abstracts-fulltext.json</code>.</p>
+    <div class="summary">
+      <div class="metric"><span>Total abstracts</span><strong>3200</strong></div>
+      <div class="metric"><span>Video-session abstracts</span><strong>191</strong></div>
+      <div class="metric"><span>Video sessions in source</span><strong>16</strong></div>
+      <div class="metric"><span>Status counts</span><strong>pending 191</strong></div>
+    </div>
+    <p class="notice">Report uses existing local metadata only; it does not extract playback IDs, HLS URLs, or recording files from authenticated Swapcard pages.</p>
+
+    <h2>Session Map</h2>
+    <div class="toolbar">
+      <input id="q" type="search" placeholder="Search session or abstract title">
+    </div>
+    <div id="cards">
+      
+            <section class="session-card" data-session="best video abstracts">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>Best Video Abstracts</span>
+                <strong>11 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 11</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OA==">V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OQ==">V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MA==">V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MQ==">V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mg==">V05-01: Reduction Corporoplasty in Congenital Mega Corpora</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mw==">V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NA==">V07-01: Renal Tumor with Level IV Thrombus: Comparing the Transdiaphragmatic and Sternotomy Approaches</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NQ==">V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Ng==">V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Nw==">V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3OA==">V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v01: upper tract reconstruction i">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V01: Upper Tract Reconstruction I</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzg5Nw==">V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwMw==">V01-02: Single-Port Robotic Ureteroenteric Stricture Repair</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwOQ==">V01-03: Robotic ureterocalicostomy for complex proximal ureteral strictures: surgical experience and technical considerations</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxMQ==">V01-04: Single Port Robotic Total Urinary Tract Reconstruction After Pelvic Crush Injury</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxNg==">V01-05: Single-Port Robotic-Assisted Transvaginal Retroperitoneal Ureteral Reimplantation: Early Experience</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMA==">V01-06: Robotic Right to Left Transureteroureterostomy with a Left Ureteral Reimplant in Bilateral Ureteral Stricture Disease</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMQ==">V01-07: Robotic Appendiceal Onlay Flap for Salvage Ureteroplasty After Failed Buccal Mucosa Graft</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyNQ==">V01-08: Technical Considerations for Robotic Cystectomy with Intracorporeal Urinary Diversion in Congenital Intestinal Malrotation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzMg==">V01-09: Single port robotic Non-transecting Pyeloplasty in Renal Transplant</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzNQ==">V01-10: Uupper Urinary Tract Reconstruction for the Treatment of Ureteral Stricture in a Duplex Collecting System: Our Experience</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzOA==">V01-11: Bilateral Ureteral Stricture: Total Ureteral Replacement with Cecal Appendix – Video-Assisted Technique Description</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Mg==">V01-12: Robotic assisted laparoscopic retroperitoneal non-transecting ureteroneocystostomy with onlay buccal mucosal ureteroplasty</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v02: urolithiasis/endourology">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V02: Urolithiasis/Endourology</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Ng==">V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0OQ==">V02-02: All-in-One Stone Management: Complete Endourological Procedure Using Only a Steerable Suctioning Ureteroscope</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1Mw==">V02-03: Retro-mini-percutaneous nephrolithotomy: description of the technique, case series, and advantages of retroperitoneoscopic assistance in the treatment of patients with retro-renal organs</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1OA==">V02-04: Robotic-Assisted Mini-Percutaneous Nephrolithotomy with the MONARCH™ Platform, Urology</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mg==">V02-05: Simultaneous bilateral endoscopic surgery: Mini-percutaneous nephrolithotomy with pulsed Thulium YAG and flexible ureteroscope with Thulium laser fiber</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mw==">V02-06: Fluoroscopic-Free Ultrasound-Guided Percutaneous Nephrolithotomy: Surgical Technique</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3MA==">V02-07: Miniaturizing ureteroscopy: Novel use of an 8/10Fr ureteral dilator as a ureteral access sheath with a 6.3Fr single-use flexible ureteroscope</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3NA==">V02-08: The Fast and the Frictionless: Capabilities of a 6.3Fr Single-Use Digital Flexible Ureteroscope</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3Ng==">V02-09: Tips and Techniques for Maximizing Efficiency with Flexible and Navigable Suction (FANS) Ureteral Access Sheaths</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4MQ==">V02-10: Robotic retrograde intrarenal surgery using flexible and navigable suction ureteral access sheath (Robotic FANS-RIRS): Initial feasibility assessment with Zamenix robotic flexible ureteroscopy platform in a porcine model</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4Mw==">V02-11: FAST-PCNL (Fluoroscopy free, Ambulatory, Supine, and Totally Tubeless Percutaneous Nephrolithotomy)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4NQ==">V02-12: Flexible and Navigable Suction Ureteral Access Sheath (FANS): Tips and Tricks on Effective Usage</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v03: female voiding dysfunction/pelvic floor disorders/incontinence/neuro-urology">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA0OA==">V03-01: Cross-Over Transobturator Autologous Rectus Fascia Sling: Step-by-Step Surgical Technique</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4MQ==">V03-02: Extraperitoneal Single-Port Robotic-Assisted Excision of Eroded Bladder Mesh</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4NA==">V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4OA==">V03-04: Robotic fascial puboprostatic sling for neurogenic male stress urinary incontinence: a new era in treatment</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5MQ==">V03-05: Robotic repair of vesicovaginal fistula associated with late sacrocolpopexy mesh infection</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5NQ==">V03-06: Single-Port Robotic Female Bladder Neck Artificial Urinary Sphincter Placement in a Patient with Multiple Failed Incontinence Surgeries</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5OQ==">V03-07: Microdebrider-assisted Colpocleisis: A Novel Technique</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwNQ==">V03-08: Surgical Explantation of an AdVance XP Male Sling For Delayed Urinary Obstruction</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwOQ==">V03-09: Reviving the autologous tensor fascia lata sling: operative technique and outcomes</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExMQ==">V03-10: Robotic excision of midurethral sling mesh: best practices and surgical principles</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNA==">V03-11: Robotic-Assisted Pectopexy and Burch Colposuspension: A Simultaneous Technique with Intraoperative Cystoscopic Verification</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNw==">V03-12: Robotic Assisted Laparoscopic Repair of a Uterovesical Fistula</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v04: lower tract reconstruction (including transgender) i">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V04: Lower Tract Reconstruction (including transgender) I</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyNQ==">V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2NA==">V04-02: Could the ‘Urachus-Based Peritoneal Hinge-Flap’ be Used for Bladder Augmentation?    Illustrated Proposed Technique and a Fresh Cadaver-Based Surgical Video</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Ng==">V04-03: Combined Robotic/Endoscopic Urethral Reconstruction for Radiation-Induced Posterior Urethral Obstruction: A novel technique for challenging pathology</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Mg==">V04-04: Single-Stage Pedicle Preputial Tube Substitution Urethroplasty with Corpora Cavernosa Augmentation Using Buccal Mucosa Graft for Primary Peno-Scrotal Hypospadias</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OQ==">V04-05: Mucosal-Sparing Augmented Non-Transected Anastomotic (MsANTA) Urethroplasty: A Novel Non-Resective Technique for Short Bulbar Urethral Strictures</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Ng==">V04-06: Robotic Vesicovaginal Fistula Repair with Buccal Graft Interposition</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NA==">V04-07: Transvaginal Single Port robotic access for vesico-vaginal fistula repair</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5MQ==">V04-08: Transurethral cystotomy closure in a male patient: a case report</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NQ==">V04-09: Project VISION - Visual instruction for stenosis intervention and optimization of neovaginal care after gender affirming  vaginoplasty</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OA==">V04-10: Overview of key techniques for exposure, dissection, and suturing in posterior urethral reconstruction</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMw==">V04-11: Beyond the Peritoneum: Non-Transperitoneal Single-Port Robotic Approaches in Urology</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNg==">V04-12: Total Bulbospongiosus muscle sparing dorsal Onlay:Beyond the one sided dissection</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v05: sexual dysfunction/infertility/andrology">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V05: Sexual Dysfunction/Infertility/Andrology</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyMg==">V05-01: Reduction Corporoplasty in Congenital Mega corpora</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Mg==">V05-02: Inflatable Penile Prosthesis Implantation after Partial Penectomy and Radial Forearm Flap Reconstruction in a Young Male</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Nw==">V05-03: Combined Inflatable Penile Prosthesis Implantation and Grafting for the Treatment of Severe Penile Curvature Associated with Erectile Dysfunction (iGrafter Technique)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3MA==">V05-04: A Rare Case of Azoospermia Due to Isochromosome Yp: Robotic Excision of Associated Mullerian Duct Cyst and Review of Clinical Implications</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OA==">V05-05: Penile Prosthesis Placement with Mesh-Type Relaxing Incisions in Peyronie’s Disease</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4MA==">V05-06: Microsurgical Denervation of the Spermatic Cord</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NQ==">V05-07: Novel Application of an Amniotic Membrane Biological Graft in the Management of Peyronie&#x27;s Disease</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4OQ==">V05-08: Percutaneous Adjustment of Testicular Implant in the Office (PATIO procedure)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NA==">V05-09: Management of penile constriction devices in the emergency department: A tertiary center experience</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OQ==">V05-10: Inflatable penile prosthesis crossover revision</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMg==">V05-11: A Rare Case of Penile Granulomatosis with Polyangitis: Case Report and Multidisciplinary Management Approach</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNw==">V05-12: ICG-Guided Microsurgical Varicocelectomy with Audible Doppler Assistance: The Finalized and Optimized Technique after 350 Cases</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v06: bph/male voiding dysfunction/infection/misc. imaging">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNA==">V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0NA==">V06-02: Lateral View Fluoroscopy Reduces Reintervention for Paraurethral Balloon Placement in Male SUI</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Nw==">V06-03: Ejaculatory hood sparing holmium laser enucleation of the prostate (HoLEP)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Mg==">V06-04: When Size Matters: Technical Refinements in Robot-Assisted Simple Prostatectomy for Large Prostatic Adenoma</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Nw==">V06-05: Lower Anterior Access Single-Port Robotic Nephrectomy for Xanthogranulomatous Pyelonephritis</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2MA==">V06-06: Ejaculation Preserving Thulium Fiber Laser enucleation of BPH</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Ng==">V06-07: Robotic Assisted HoLEP: A new Safe and Precise Approach with the Beacon Platform</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3Mg==">V06-08: Urethra-Sparing Robotic Adenomectomy: Redefining Sexual Function Preservation in the Surgical Treatment of Large Benign Prostatic Hyperplasia</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OQ==">V06-09: SIAMLEP: Anatomical Simulator for Prostate Enucleation and Morcellation within a Single Training Device</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4NA==">V06-10: ALTERNATIVE FOR PROSTATIC MORCELLATION DURING MILEP 18.5Fr IN A PATIENT WITH URETHRAL STRICTURE</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Nw==">V06-11: Empowering patients to reduce unplanned healthcare encounters after BPH surgeries</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MQ==">V06-12: Holmium Laser Enucleation of the Prostate: Anatomical Foundations, Technical Description of the No Stress Incontinence Enucleation (NIcE) Technique, and Pilot Study Results in 38 Patients.</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v07: adrenal/renal oncology i">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V07: Adrenal/Renal Oncology I</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNQ==">V07-01: Renal tumor with Level IV thrombus: Comparing the transdiaphragmatic and sternotomy approaches</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Mg==">V07-02: Advancing Single Port Retroperitoneal Surgery: A Consensus-based Hydrogel model for Low Anterior Access Partial Nephrectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0OQ==">V07-03: Robot-Assisted Nephron-Sparing Surgery and Tumor Thrombectomy in Patient with Renal Angiomyolipoma and Inferior Vena Cava Tumor Thrombus: Surgical Technique and Preliminary Results</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1MQ==">V07-04: Low anterior access single port robotic nephroureterectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1OA==">V07-05: Retroperitoneal Robot Assisted Partial Nephrectomy:  A side-by-side comparison of Single-Port vs multi-port approaches</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2NQ==">V07-06: Robot-Assisted Partial Nephrectomy Using Four Different Robotic Platforms: Institutional Experience and Feasibility</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Nw==">V07-07: Minimally invasive partial nephrectomy under the guidance of augmented reality dynamic real-time navigation based on the deep-learning multi-structural tridimensional kidney model</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3MA==">V07-08: 3D-Image guided robot-assisted heminephrectomy with IVC thrombectomy on a single kidney</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OA==">V07-09: Advanced renal cell carcinoma with retrohepatic inferior vena cava thrombus: technical pearls of robotic level 3 inferior vena cava thrombectomy using suprahepatic caval Control</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Mg==">V07-10: Staged bilateral robot-assisted partial nephrectomy: a structured approach for multifocal bilateral renal tumors</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4OQ==">V07-11: Completely true single-port partial nephrectomy via low anterolateral access for T1B kidney tumors</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MA==">V07-12: Open level III IVC thrombectomy in complex left renal mass</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v08: misc. benign/transplant/renovascular">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V08: Misc. Benign/Transplant/Renovascular</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5Mw==">V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMA==">V08-02: Cystoscopic Transplant Ureteral Stent Insertion</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMg==">V08-03: Robotic Dual Kidney Transplant with Transvaginal Kidney Insertion</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzNQ==">V08-04: Single-Port Robotic Ipsilateral Dual Kidney Transplantation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0MQ==">V08-05: Single Port Robotic Extraperitoneal Donor Nephrectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0NA==">V08-06: The latest innovations in robot assisted kidney transplantation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0OA==">V08-07: Single-Port Robot-Assisted Gonadal Vein Transposition</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1MQ==">V08-08: Robotic Inferior Mesenteric Vein Transposition to a Retroaortic Renal Vein for the Treatment of Nutcracker Syndrome</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1Ng==">V08-09: Robotic Nephropexy for Renal Ptosis</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2MQ==">V08-10: Fluorescence-Guided Laparoscopic Reconstruction in Pediatric Kidney Transplantation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Mg==">V08-11: Robotic Kidney Transplantation with Dual Renal Arteries Using a Third-Party Iliac Artery Graft in a Recipient with Extensive Iliac Calcification</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Ng==">V08-12: Concomitant Holmium Laser Enucleation of Prostate (HoLEP) with transurethral incision or resection of diverticular neck and fulguration of Bladder Diverticulum (TUFD) for management of enlarged prostate and associated acquired bladder diverticulum</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v09: adrenal/renal oncology ii">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V09: Adrenal/Renal Oncology II</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM3MQ==">V09-01: Single-Port Robotic Assisted Extraperitoneal Right Adrenalectomy via Low Anterior Approach</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwMQ==">V09-02: Robotic-assisted Laparoscopic Partial Nephrectomy of Transplant Kidney, Off-clamp</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwNQ==">V09-03: Kidney cancer with segmental venous invasion : tips and tricks for 3D Image-Guided Robotic Assisted Partial Nephrectomy (3D IGRAPN)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwOA==">V09-04: Robotic Assisted Retroperitoneal Sarcoma Resection with Left Renal Vein Reconstruction With Bovine Pericardium</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxMg==">V09-05: Robotic Suprarenal Cavectomy for Level III IVC Tumor Thrombus: Step-by-Step Technique and Technical Refinements</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxNQ==">V09-06: Intra-arterial cooling for renal hypothermia in robot assisted partial nephrectomy for completely endophytic tumors</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMA==">V09-07: Vena cava thrombectomy and robot assisted radical nephrectomy using augmented reality guidance: Technique and Experience Sharing</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMQ==">V09-08: Robot-Assisted Laparoscopic Pheochromocytoma and Paraganglioma Resection: A National Tertiary Referral Center Experience</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyNg==">V09-09: Single Port Robotic Retroperitoneal Partial Nephrectomy in Severely Obese Patient</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyOQ==">V09-10: Exploring the Feasibility of 3D Augmented Reality in Image-Guided Robot-Assisted Partial Nephrectomy: Initial prospective Clinical Experience and Outcomes of 3D AR-IGRAPN (UroCCR 112)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzMg==">V09-11: Transitioning from Multiport Robotic Partial Nephrectomy (MP-RAPN) to Single Port Partial Nephrectomy (SP-RAPN): The Rationale Behind the Indications</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzNw==">V09-12: Sutureless retroperitoneal robot assisted partial nephrectomy: initial experience with Veriset™ hemostatic patch</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v10: pediatrics">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V10: Pediatrics</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ0MQ==">V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3Mg==">V10-02: A Case of Severe Clitoral Adhesions and Lysis in a 7-year-old female</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3NA==">V10-03: Radiation-Sparing Management of Pediatric Bladder Rhabdomyosarcoma via Robot-Assisted Radical Cystectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3OA==">V10-04: Intraoperative Diuretic Drainage Test to Guide Laparoscopic Vascular Hitch vs. Laparoscopic Dismembered Pyeloplasty in UPJO with Crossing Vessels</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Mg==">V10-05: Robotic-assisted bladder neck closure and Mitrofanoff in a patient with prior bladder exstrophy repair</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Ng==">V10-06: Managing the unexpected: Incidental appendicolithotomy during robotic Mitrofanoff with concurrent bladder onabotulinumtoxinA and cecostomy tube placement</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4OQ==">V10-07: Robotic Mitrofanoff Revision</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Mg==">V10-08: Open Pyeloplasty in Infants and Small Children: An Operative Guide</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Nw==">V10-09: A Minimally Invasive Milestone: Pediatric Single-Port Robotic Nephroureterectomy Using Low Anterior Access</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5OA==">V10-10: Robot-Assisted Partial Cystectomy in a 10-year-old: Managing a Rare Bladder Leiomyoma with Minimally Invasive Surgery</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwMg==">V10-11: Bilateral Common Sheath Robotic-Assisted Laparoscopic Dismembered Extravesical Cross-Trigonal Ureteral Reimplantation of Complete Duplex Ureters</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwOA==">V10-12: An acellular, small molecule directed approach to promote urinary bladder tissue regeneration in a non-human primate</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v11: upper tract reconstruction ii">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V11: Upper Tract Reconstruction II</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUxMg==">V11-01: Single-Port Robotic Bilateral Ileal Ureter</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0OQ==">V11-02: Elbow Wide: Optimizing Dexterity and Ergonomics in Single-Port Robotic Surgery</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0Ng==">V11-03: Robotic Single-Port Low Anterior Access: A Novel Approach for Retroperitoneal Dismembered Pyeloplasty</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Mw==">V11-04: Adaptation of Robotic Surgery Technique for Patients with Horseshoe Kidney</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Nw==">V11-05: ROBOT-ASSISTED LAPAROSCOPIC END-TO-SIDE RIGHT ILEAL URETER IN PATIENT WITH PRIOR LEFT URETERAL REIMPLANT AND BOARI FLAP</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2MA==">V11-06: Robotic-Assisted Bilateral Ureteral Reconstruction into an Indiana Pouch with Ileal Ureter Interposition</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2NA==">V11-07: Nontransecting Anastomotic Augmentation Ureteroplasty - Joshi Step</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2Nw==">V11-08: Modified T-Pouch continent reservoir following robotic cystectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3NA==">V11-09: Single Port Robotic Retroperitoneal Non-transecting Ureteroureterostomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3Ng==">V11-10: Back to the future: robotic augmented anastomotic buccal mucosal graft pyeloplasty after failed lower pole calycostomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3OQ==">V11-11: Modified Robot-assisted Dismembered Pyeloplasty (RALDP)for horseshoes kidney</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Mw==">V11-12: Single-Port Robotic Non-Transecting Ureteral Reimplantation and Buccal Mucosa Graft Ureteroplasty for Double Ureteral Stricture</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v12: prostate oncology/penile &amp; testis oncology/misc. oncology i">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Nw==">V12-01: Robotic Assisted Laparoscopic Extended Pelvic Lymph Node Dissection guided by preoperative marking of extra-template nodes with indocyanine green and coil - A safe way not to leave suspected lesions behind</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0MQ==">V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Mg==">V12-03: Single-Port Antegrade Robotic Lymphadenectomy (SPARL): a novel minimally-invasive approach to treat lymph nodes in men with penile cancer</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Nw==">V12-04: Transvesical Single-Port Robotic-Assisted Radical Prostatectomy with Double Bladder Diverticulectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NA==">V12-05: Robotic-Assisted Excision of Pelvic Fibromatosis: A Feasible Organ-Sparing Approach for Complex Pelvic Tumors</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NQ==">V12-06: Partial gland HIFU for ablation of prostate cancer: technique and outcomes</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1OQ==">V12-07: MRI and PSMA PET-Guided Focal Ablation of Localized Prostate Cancer Using Pulsed Electric Field (PEF) Therapy with Galvanize: A Novel Non-Thermal Image-Guided Approach</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2Mw==">V12-08: Intraoperative vascular complications in minimally invasive retroperitoneal lymph node dissection</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2OA==">V12-09: Diode LASER for the management of PeIN in the outpatient setting: a single centre experience</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3Mg==">V12-10: Salvage Single Port Transvesical Robotic Radical Prostatectomy Following High Intensity Focused Ultrasound (HIFU)</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3NQ==">V12-11: AI-to-AR integration for MRI–ultrasound fusion prostate biopsy: a surgeon-centered augmented reality platform using HoloLens 2 and Micro-Ultrasound</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3OA==">V12-12: AR-Guided Robot Assisted Retroperitoneal Lymph Node Dissection</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v13: lower tract reconstruction (including transgender) ii">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V13: Lower Tract Reconstruction (including transgender) II</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc4NQ==">V13-01: Split Pedicled preputial Graft: A new Technique for dual site strictures</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA1Nw==">V13-02: Non-transecting Bulbovesical Anastomosis for Extensive Posterior Urethral Stenosis: Surgical Technique and Outcomes Anticipating Artificial Urinary Sphincter Placement</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2MA==">V13-03: Robotic Dorsal Onlay Buccal Mucosal Graft Urethroplasty for Radiation-Induced Panurethral Stricture Disease in a Female</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2Mw==">V13-04: Simplified technique for corporal excision during vaginoplasty using a microdebrider</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2OQ==">V13-05: Single-Port Robotic Male Bladder Neck Artificial Urinary Sphincter</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Mw==">V13-06: Mucosal-sparing augmented non-transected anastomotic (MsANTA) urethroplasty. Is true non-transecting urethroplasty possible?</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Nw==">V13-07: Spray-on autologous buccal mucosa graft for substitution urethroplasty</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4MA==">V13-08: Novel Technique for Robotic Single Port Parastomal Hernia Repair Using Mesh Suture</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Mg==">V13-09: Combined Salvage Colon Vaginoplasty and Management of Rectovaginal Fistula after Penile-Inversion &amp; Peritoneal Vaginoplasty</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Nw==">V13-10: Incision-sparing gracilis muscle flap harvest for urologic reconstruction</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4OA==">V13-11: Single Port Robotic Trans-Anal Recto-Prostatic Fistula Repair</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA5Mg==">V13-12: Robotic Repair of Entero-Vesical Fistula Using a Novel Urachus-Based Peritoneal Hinge-Flap: A Surgical Video Presentation</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v14: prostate oncology/penile &amp; testis oncology/misc. oncology ii">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTEwMQ==">V14-01: Cross-border Transcontinental Human Telesurgeries</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM2NA==">V14-02: Augmented-reality guided transperineal prostate biopsies: shifting the paradigm</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3NQ==">V14-03: How to Perform A Single-Port Retroperitoneal Lymph Node Dissection</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3OQ==">V14-04: Focal Irreversible Electroporation (IRE) for Prostate Cancer: Patient Selection &amp; A Step-by-Step Surgical Approach</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4Mw==">V14-05: Incidental Finding and Robotic-Assisted Management of a Duplex System with Ectopic Ureter Insertion into the Prostatic Urethra During Radical Prostatectomy: A Video Case Report</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4NA==">V14-06: Single-Port Robotic Surgery in Awake Patients Using Virtual Reality: A Case Series of Patients Treated for Kidney and Prostate Cancer.</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5MQ==">V14-07: 3D-AR Guidance and VivaScope Digital Pathology for Real-Time Surgical Tailoring During Robotic Radical Prostatectomy: Feasibility Assessment and Preliminary Findings</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4OA==">V14-08: Technical details and 1-year outcome of “Early Prostatic Artery Control” technique during Robot-Assisted Radical Prostatectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5OA==">V14-09: Single Port Antegrade Robotic Lymphadenectomy (SPARL): surgical anatomy from cadaver dissection to clinical application</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwMQ==">V14-10: Robotic Retroperitoneal Lymph Node Dissection: Step-by-Step Technique and Surgical Pearls</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwNQ==">V14-11: Extraperitoneal Robot Assisted Radical Prostatectomy:  A side-by-side comparison of Single-Port vs multi-port approaches</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMA==">V14-12: First-in-Human Transcontinental Robotic HIFU Telesurgery: A New Era in Globalizing Focal Treatment for Prostate Cancer</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+            <section class="session-card" data-session="v15: bladder &amp; urothelial upper tract oncology">
+              <button class="session-head" type="button" aria-expanded="false">
+                <span>V15: Bladder &amp; Urothelial Upper Tract Oncology</span>
+                <strong>12 abstracts</strong>
+              </button>
+              <div class="session-body">
+                <p class="status-line">pending: 12</p>
+                <ol>
+                  <li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMg==">V15-01: Single Port Indiana Pouch: Demonstration of Technique and Feasibility</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY4Ng==">V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY5OA==">V15-03: Video-based en bloc resection of upper tract urothelial carcinoma using a flexible and navigable suction ureteral access sheath and thulium fiber laser with stereotactic ablative radiotherapy: Feasibility and early outcomes</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwMQ==">V15-04: Robotic Parastomal Hernia Repair After Ileal Conduit Diversion Using Primary Defect Closure and Composite Mesh Reinforcement</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNA==">V15-05: Single Port Approach to Nephroureterectomy after Radical Cystectomy with Ileal Conduit</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNw==">V15-06: Geriatric assessment prior to major urologic surgery: A randomized clinical trial and step-by-step administration tool</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMQ==">V15-07: Intracorporeal Isoperistaltic Ileal-Ileal Anastomosis: A Novel Technique for Restoration of Bowel</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMw==">V15-08: Robot-assisted laparoscopic left ileal ureter replacement for suspected upper tract urothelial carcinoma</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNg==">V15-09: A novel ex vivo porcine neobladder simulation</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMA==">V15-10: Tips and Tricks to Optimize TURBt Spcimen Processing and Image Acquisition for Confocal Laser Microscopy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNw==">V15-11: Step by Step: How to Perform a Single Port Nephroureterectomy</a><span>pending</span></li><li><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMQ==">V15-12: Single Port Extraperitoneal Distal Ureterectomy with Ureteral Reimplant</a><span>pending</span></li>
+                </ol>
+              </div>
+            </section>
+            
+    </div>
+
+    <h2>Flat Checklist</h2>
+    <table id="flat">
+      <thead>
+        <tr>
+          <th>Session</th>
+          <th>Abstract</th>
+          <th>Status</th>
+          <th>Date</th>
+          <th>Time</th>
+          <th>Place</th>
+          <th>Swapcard</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:00</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:10</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:20</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:30</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V05-01: Reduction Corporoplasty in Congenital Mega Corpora</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:40</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>13:50</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V07-01: Renal Tumor with Level IV Thrombus: Comparing the Transdiaphragmatic and Sternotomy Approaches</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>14:00</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>14:10</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>14:20</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>14:30</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>Best Video Abstracts</td>
+                  <td>V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>14:40</td>
+                  <td>Hall B, The Square, Learning Lab</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzg5Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-02: Single-Port Robotic Ureteroenteric Stricture Repair</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwMw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-03: Robotic ureterocalicostomy for complex proximal ureteral strictures: surgical experience and technical considerations</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwOQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-04: Single Port Robotic Total Urinary Tract Reconstruction After Pelvic Crush Injury</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-05: Single-Port Robotic-Assisted Transvaginal Retroperitoneal Ureteral Reimplantation: Early Experience</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxNg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-06: Robotic Right to Left Transureteroureterostomy with a Left Ureteral Reimplant in Bilateral Ureteral Stricture Disease</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>07:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-07: Robotic Appendiceal Onlay Flap for Salvage Ureteroplasty After Failed Buccal Mucosa Graft</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-08: Technical Considerations for Robotic Cystectomy with Intracorporeal Urinary Diversion in Congenital Intestinal Malrotation</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-09: Single port robotic Non-transecting Pyeloplasty in Renal Transplant</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-10: Uupper Urinary Tract Reconstruction for the Treatment of Ureteral Stricture in a Duplex Collecting System: Our Experience</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-11: Bilateral Ureteral Stricture: Total Ureteral Replacement with Cecal Appendix – Video-Assisted Technique Description</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzOA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V01: Upper Tract Reconstruction I</td>
+                  <td>V01-12: Robotic assisted laparoscopic retroperitoneal non-transecting ureteroneocystostomy with onlay buccal mucosal ureteroplasty</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>08:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>09:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-02: All-in-One Stone Management: Complete Endourological Procedure Using Only a Steerable Suctioning Ureteroscope</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>09:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-03: Retro-mini-percutaneous nephrolithotomy: description of the technique, case series, and advantages of retroperitoneoscopic assistance in the treatment of patients with retro-renal organs</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>09:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-04: Robotic-Assisted Mini-Percutaneous Nephrolithotomy with the MONARCH™ Platform, Urology</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-05: Simultaneous bilateral endoscopic surgery: Mini-percutaneous nephrolithotomy with pulsed Thulium YAG and flexible ureteroscope with Thulium laser fiber</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-06: Fluoroscopic-Free Ultrasound-Guided Percutaneous Nephrolithotomy: Surgical Technique</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-07: Miniaturizing ureteroscopy: Novel use of an 8/10Fr ureteral dilator as a ureteral access sheath with a 6.3Fr single-use flexible ureteroscope</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-08: The Fast and the Frictionless: Capabilities of a 6.3Fr Single-Use Digital Flexible Ureteroscope</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-09: Tips and Techniques for Maximizing Efficiency with Flexible and Navigable Suction (FANS) Ureteral Access Sheaths</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>10:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-10: Robotic retrograde intrarenal surgery using flexible and navigable suction ureteral access sheath (Robotic FANS-RIRS): Initial feasibility assessment with Zamenix robotic flexible ureteroscopy platform in a porcine model</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>11:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-11: FAST-PCNL (Fluoroscopy free, Ambulatory, Supine, and Totally Tubeless Percutaneous Nephrolithotomy)</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>11:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V02: Urolithiasis/Endourology</td>
+                  <td>V02-12: Flexible and Navigable Suction Ureteral Access Sheath (FANS): Tips and Tricks on Effective Usage</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>11:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-01: Cross-Over Transobturator Autologous Rectus Fascia Sling: Step-by-Step Surgical Technique</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>15:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA0OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-02: Extraperitoneal Single-Port Robotic-Assisted Excision of Eroded Bladder Mesh</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>15:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>15:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-04: Robotic fascial puboprostatic sling for neurogenic male stress urinary incontinence: a new era in treatment</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-05: Robotic repair of vesicovaginal fistula associated with late sacrocolpopexy mesh infection</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-06: Single-Port Robotic Female Bladder Neck Artificial Urinary Sphincter Placement in a Patient with Multiple Failed Incontinence Surgeries</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-07: Microdebrider-assisted Colpocleisis: A Novel Technique</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-08: Surgical Explantation of an AdVance XP Male Sling For Delayed Urinary Obstruction</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-09: Reviving the autologous tensor fascia lata sling: operative technique and outcomes</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>16:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwOQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-10: Robotic excision of midurethral sling mesh: best practices and surgical principles</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>17:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-11: Robotic-Assisted Pectopexy and Burch Colposuspension: A Simultaneous Technique with Intraoperative Cystoscopic Verification</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>17:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology</td>
+                  <td>V03-12: Robotic Assisted Laparoscopic Repair of a Uterovesical Fistula</td>
+                  <td>pending</td>
+                  <td>2026-05-15</td>
+                  <td>17:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-02: Could the ‘Urachus-Based Peritoneal Hinge-Flap’ be Used for Bladder Augmentation?    Illustrated Proposed Technique and a Fresh Cadaver-Based Surgical Video</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-03: Combined Robotic/Endoscopic Urethral Reconstruction for Radiation-Induced Posterior Urethral Obstruction: A novel technique for challenging pathology</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-04: Single-Stage Pedicle Preputial Tube Substitution Urethroplasty with Corpora Cavernosa Augmentation Using Buccal Mucosa Graft for Primary Peno-Scrotal Hypospadias</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-05: Mucosal-Sparing Augmented Non-Transected Anastomotic (MsANTA) Urethroplasty: A Novel Non-Resective Technique for Short Bulbar Urethral Strictures</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-06: Robotic Vesicovaginal Fistula Repair with Buccal Graft Interposition</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-07: Transvaginal Single Port robotic access for vesico-vaginal fistula repair</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-08: Transurethral cystotomy closure in a male patient: a case report</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-09: Project VISION - Visual instruction for stenosis intervention and optimization of neovaginal care after gender affirming  vaginoplasty</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-10: Overview of key techniques for exposure, dissection, and suturing in posterior urethral reconstruction</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-11: Beyond the Peritoneum: Non-Transperitoneal Single-Port Robotic Approaches in Urology</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V04: Lower Tract Reconstruction (including transgender) I</td>
+                  <td>V04-12: Total Bulbospongiosus muscle sparing dorsal Onlay:Beyond the one sided dissection</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-01: Reduction Corporoplasty in Congenital Mega corpora</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:00</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-02: Inflatable Penile Prosthesis Implantation after Partial Penectomy and Radial Forearm Flap Reconstruction in a Young Male</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:10</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-03: Combined Inflatable Penile Prosthesis Implantation and Grafting for the Treatment of Severe Penile Curvature Associated with Erectile Dysfunction (iGrafter Technique)</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:20</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-04: A Rare Case of Azoospermia Due to Isochromosome Yp: Robotic Excision of Associated Mullerian Duct Cyst and Review of Clinical Implications</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:30</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-05: Penile Prosthesis Placement with Mesh-Type Relaxing Incisions in Peyronie’s Disease</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:40</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-06: Microsurgical Denervation of the Spermatic Cord</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>07:50</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-07: Novel Application of an Amniotic Membrane Biological Graft in the Management of Peyronie&#x27;s Disease</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:00</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-08: Percutaneous Adjustment of Testicular Implant in the Office (PATIO procedure)</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:10</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-09: Management of penile constriction devices in the emergency department: A tertiary center experience</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:20</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-10: Inflatable penile prosthesis crossover revision</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:30</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-11: A Rare Case of Penile Granulomatosis with Polyangitis: Case Report and Multidisciplinary Management Approach</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:40</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V05: Sexual Dysfunction/Infertility/Andrology</td>
+                  <td>V05-12: ICG-Guided Microsurgical Varicocelectomy with Audible Doppler Assistance: The Finalized and Optimized Technique after 350 Cases</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>08:50</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-02: Lateral View Fluoroscopy Reduces Reintervention for Paraurethral Balloon Placement in Male SUI</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-03: Ejaculatory hood sparing holmium laser enucleation of the prostate (HoLEP)</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-04: When Size Matters: Technical Refinements in Robot-Assisted Simple Prostatectomy for Large Prostatic Adenoma</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-05: Lower Anterior Access Single-Port Robotic Nephrectomy for Xanthogranulomatous Pyelonephritis</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-06: Ejaculation Preserving Thulium Fiber Laser enucleation of BPH</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-07: Robotic Assisted HoLEP: A new Safe and Precise Approach with the Beacon Platform</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-08: Urethra-Sparing Robotic Adenomectomy: Redefining Sexual Function Preservation in the Surgical Treatment of Large Benign Prostatic Hyperplasia</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-09: SIAMLEP: Anatomical Simulator for Prostate Enucleation and Morcellation within a Single Training Device</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-10: ALTERNATIVE FOR PROSTATIC MORCELLATION DURING MILEP 18.5Fr IN A PATIENT WITH URETHRAL STRICTURE</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-11: Empowering patients to reduce unplanned healthcare encounters after BPH surgeries</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging</td>
+                  <td>V06-12: Holmium Laser Enucleation of the Prostate: Anatomical Foundations, Technical Description of the No Stress Incontinence Enucleation (NIcE) Technique, and Pilot Study Results in 38 Patients.</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-01: Renal tumor with Level IV thrombus: Comparing the transdiaphragmatic and sternotomy approaches</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:30</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-02: Advancing Single Port Retroperitoneal Surgery: A Consensus-based Hydrogel model for Low Anterior Access Partial Nephrectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:40</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-03: Robot-Assisted Nephron-Sparing Surgery and Tumor Thrombectomy in Patient with Renal Angiomyolipoma and Inferior Vena Cava Tumor Thrombus: Surgical Technique and Preliminary Results</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>09:50</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-04: Low anterior access single port robotic nephroureterectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:00</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-05: Retroperitoneal Robot Assisted Partial Nephrectomy:  A side-by-side comparison of Single-Port vs multi-port approaches</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:10</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-06: Robot-Assisted Partial Nephrectomy Using Four Different Robotic Platforms: Institutional Experience and Feasibility</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:20</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-07: Minimally invasive partial nephrectomy under the guidance of augmented reality dynamic real-time navigation based on the deep-learning multi-structural tridimensional kidney model</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:30</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-08: 3D-Image guided robot-assisted heminephrectomy with IVC thrombectomy on a single kidney</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:40</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-09: Advanced renal cell carcinoma with retrohepatic inferior vena cava thrombus: technical pearls of robotic level 3 inferior vena cava thrombectomy using suprahepatic caval Control</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>10:50</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-10: Staged bilateral robot-assisted partial nephrectomy: a structured approach for multifocal bilateral renal tumors</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:00</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-11: Completely true single-port partial nephrectomy via low anterolateral access for T1B kidney tumors</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:10</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V07: Adrenal/Renal Oncology I</td>
+                  <td>V07-12: Open level III IVC thrombectomy in complex left renal mass</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>11:20</td>
+                  <td>209B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-02: Cystoscopic Transplant Ureteral Stent Insertion</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-03: Robotic Dual Kidney Transplant with Transvaginal Kidney Insertion</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-04: Single-Port Robotic Ipsilateral Dual Kidney Transplantation</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-05: Single Port Robotic Extraperitoneal Donor Nephrectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-06: The latest innovations in robot assisted kidney transplantation</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>13:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-07: Single-Port Robot-Assisted Gonadal Vein Transposition</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-08: Robotic Inferior Mesenteric Vein Transposition to a Retroaortic Renal Vein for the Treatment of Nutcracker Syndrome</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-09: Robotic Nephropexy for Renal Ptosis</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-10: Fluorescence-Guided Laparoscopic Reconstruction in Pediatric Kidney Transplantation</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-11: Robotic Kidney Transplantation with Dual Renal Arteries Using a Third-Party Iliac Artery Graft in a Recipient with Extensive Iliac Calcification</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V08: Misc. Benign/Transplant/Renovascular</td>
+                  <td>V08-12: Concomitant Holmium Laser Enucleation of Prostate (HoLEP) with transurethral incision or resection of diverticular neck and fulguration of Bladder Diverticulum (TUFD) for management of enlarged prostate and associated acquired bladder diverticulum</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>14:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-01: Single-Port Robotic Assisted Extraperitoneal Right Adrenalectomy via Low Anterior Approach</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>15:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM3MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-02: Robotic-assisted Laparoscopic Partial Nephrectomy of Transplant Kidney, Off-clamp</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>15:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-03: Kidney cancer with segmental venous invasion : tips and tricks for 3D Image-Guided Robotic Assisted Partial Nephrectomy (3D IGRAPN)</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>15:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-04: Robotic Assisted Retroperitoneal Sarcoma Resection with Left Renal Vein Reconstruction With Bovine Pericardium</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwOA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-05: Robotic Suprarenal Cavectomy for Level III IVC Tumor Thrombus: Step-by-Step Technique and Technical Refinements</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-06: Intra-arterial cooling for renal hypothermia in robot assisted partial nephrectomy for completely endophytic tumors</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-07: Vena cava thrombectomy and robot assisted radical nephrectomy using augmented reality guidance: Technique and Experience Sharing</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-08: Robot-Assisted Laparoscopic Pheochromocytoma and Paraganglioma Resection: A National Tertiary Referral Center Experience</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-09: Single Port Robotic Retroperitoneal Partial Nephrectomy in Severely Obese Patient</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>16:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyNg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-10: Exploring the Feasibility of 3D Augmented Reality in Image-Guided Robot-Assisted Partial Nephrectomy: Initial prospective Clinical Experience and Outcomes of 3D AR-IGRAPN (UroCCR 112)</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>17:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyOQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-11: Transitioning from Multiport Robotic Partial Nephrectomy (MP-RAPN) to Single Port Partial Nephrectomy (SP-RAPN): The Rationale Behind the Indications</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>17:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V09: Adrenal/Renal Oncology II</td>
+                  <td>V09-12: Sutureless retroperitoneal robot assisted partial nephrectomy: initial experience with Veriset™ hemostatic patch</td>
+                  <td>pending</td>
+                  <td>2026-05-16</td>
+                  <td>17:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzNw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ0MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-02: A Case of Severe Clitoral Adhesions and Lysis in a 7-year-old female</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-03: Radiation-Sparing Management of Pediatric Bladder Rhabdomyosarcoma via Robot-Assisted Radical Cystectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-04: Intraoperative Diuretic Drainage Test to Guide Laparoscopic Vascular Hitch vs. Laparoscopic Dismembered Pyeloplasty in UPJO with Crossing Vessels</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-05: Robotic-assisted bladder neck closure and Mitrofanoff in a patient with prior bladder exstrophy repair</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-06: Managing the unexpected: Incidental appendicolithotomy during robotic Mitrofanoff with concurrent bladder onabotulinumtoxinA and cecostomy tube placement</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>07:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-07: Robotic Mitrofanoff Revision</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-08: Open Pyeloplasty in Infants and Small Children: An Operative Guide</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-09: A Minimally Invasive Milestone: Pediatric Single-Port Robotic Nephroureterectomy Using Low Anterior Access</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-10: Robot-Assisted Partial Cystectomy in a 10-year-old: Managing a Rare Bladder Leiomyoma with Minimally Invasive Surgery</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-11: Bilateral Common Sheath Robotic-Assisted Laparoscopic Dismembered Extravesical Cross-Trigonal Ureteral Reimplantation of Complete Duplex Ureters</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V10: Pediatrics</td>
+                  <td>V10-12: An acellular, small molecule directed approach to promote urinary bladder tissue regeneration in a non-human primate</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>08:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwOA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-01: Single-Port Robotic Bilateral Ileal Ureter</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>09:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUxMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-02: Elbow Wide: Optimizing Dexterity and Ergonomics in Single-Port Robotic Surgery</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>09:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-03: Robotic Single-Port Low Anterior Access: A Novel Approach for Retroperitoneal Dismembered Pyeloplasty</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>09:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-04: Adaptation of Robotic Surgery Technique for Patients with Horseshoe Kidney</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-05: ROBOT-ASSISTED LAPAROSCOPIC END-TO-SIDE RIGHT ILEAL URETER IN PATIENT WITH PRIOR LEFT URETERAL REIMPLANT AND BOARI FLAP</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-06: Robotic-Assisted Bilateral Ureteral Reconstruction into an Indiana Pouch with Ileal Ureter Interposition</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-07: Nontransecting Anastomotic Augmentation Ureteroplasty - Joshi Step</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-08: Modified T-Pouch continent reservoir following robotic cystectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-09: Single Port Robotic Retroperitoneal Non-transecting Ureteroureterostomy</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>10:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-10: Back to the future: robotic augmented anastomotic buccal mucosal graft pyeloplasty after failed lower pole calycostomy</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>11:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-11: Modified Robot-assisted Dismembered Pyeloplasty (RALDP)for horseshoes kidney</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>11:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V11: Upper Tract Reconstruction II</td>
+                  <td>V11-12: Single-Port Robotic Non-Transecting Ureteral Reimplantation and Buccal Mucosa Graft Ureteroplasty for Double Ureteral Stricture</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>11:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-01: Robotic Assisted Laparoscopic Extended Pelvic Lymph Node Dissection guided by preoperative marking of extra-template nodes with indocyanine green and coil - A safe way not to leave suspected lesions behind</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-03: Single-Port Antegrade Robotic Lymphadenectomy (SPARL): a novel minimally-invasive approach to treat lymph nodes in men with penile cancer</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-04: Transvesical Single-Port Robotic-Assisted Radical Prostatectomy with Double Bladder Diverticulectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-05: Robotic-Assisted Excision of Pelvic Fibromatosis: A Feasible Organ-Sparing Approach for Complex Pelvic Tumors</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-06: Partial gland HIFU for ablation of prostate cancer: technique and outcomes</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>13:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-07: MRI and PSMA PET-Guided Focal Ablation of Localized Prostate Cancer Using Pulsed Electric Field (PEF) Therapy with Galvanize: A Novel Non-Thermal Image-Guided Approach</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-08: Intraoperative vascular complications in minimally invasive retroperitoneal lymph node dissection</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-09: Diode LASER for the management of PeIN in the outpatient setting: a single centre experience</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-10: Salvage Single Port Transvesical Robotic Radical Prostatectomy Following High Intensity Focused Ultrasound (HIFU)</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-11: AI-to-AR integration for MRI–ultrasound fusion prostate biopsy: a surgeon-centered augmented reality platform using HoloLens 2 and Micro-Ultrasound</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V12: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology I</td>
+                  <td>V12-12: AR-Guided Robot Assisted Retroperitoneal Lymph Node Dissection</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>14:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-01: Split Pedicled preputial Graft: A new Technique for dual site strictures</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>15:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc4NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-02: Non-transecting Bulbovesical Anastomosis for Extensive Posterior Urethral Stenosis: Surgical Technique and Outcomes Anticipating Artificial Urinary Sphincter Placement</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>15:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA1Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-03: Robotic Dorsal Onlay Buccal Mucosal Graft Urethroplasty for Radiation-Induced Panurethral Stricture Disease in a Female</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>15:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-04: Simplified technique for corporal excision during vaginoplasty using a microdebrider</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-05: Single-Port Robotic Male Bladder Neck Artificial Urinary Sphincter</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-06: Mucosal-sparing augmented non-transected anastomotic (MsANTA) urethroplasty. Is true non-transecting urethroplasty possible?</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-07: Spray-on autologous buccal mucosa graft for substitution urethroplasty</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-08: Novel Technique for Robotic Single Port Parastomal Hernia Repair Using Mesh Suture</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4MA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-09: Combined Salvage Colon Vaginoplasty and Management of Rectovaginal Fistula after Penile-Inversion &amp; Peritoneal Vaginoplasty</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>16:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-10: Incision-sparing gracilis muscle flap harvest for urologic reconstruction</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>17:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Nw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-11: Single Port Robotic Trans-Anal Recto-Prostatic Fistula Repair</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>17:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V13: Lower Tract Reconstruction (including transgender) II</td>
+                  <td>V13-12: Robotic Repair of Entero-Vesical Fistula Using a Novel Urachus-Based Peritoneal Hinge-Flap: A Surgical Video Presentation</td>
+                  <td>pending</td>
+                  <td>2026-05-17</td>
+                  <td>17:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA5Mg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-01: Cross-border Transcontinental Human Telesurgeries</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTEwMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-02: Augmented-reality guided transperineal prostate biopsies: shifting the paradigm</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM2NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-03: How to Perform A Single-Port Retroperitoneal Lymph Node Dissection</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3NQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-04: Focal Irreversible Electroporation (IRE) for Prostate Cancer: Patient Selection &amp; A Step-by-Step Surgical Approach</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3OQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-05: Incidental Finding and Robotic-Assisted Management of a Duplex System with Ectopic Ureter Insertion into the Prostatic Urethra During Radical Prostatectomy: A Video Case Report</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4Mw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-06: Single-Port Robotic Surgery in Awake Patients Using Virtual Reality: A Case Series of Patients Treated for Kidney and Prostate Cancer.</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>07:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4NA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-07: 3D-AR Guidance and VivaScope Digital Pathology for Real-Time Surgical Tailoring During Robotic Radical Prostatectomy: Feasibility Assessment and Preliminary Findings</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5MQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-08: Technical details and 1-year outcome of “Early Prostatic Artery Control” technique during Robot-Assisted Radical Prostatectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-09: Single Port Antegrade Robotic Lymphadenectomy (SPARL): surgical anatomy from cadaver dissection to clinical application</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-10: Robotic Retroperitoneal Lymph Node Dissection: Step-by-Step Technique and Surgical Pearls</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-11: Extraperitoneal Robot Assisted Radical Prostatectomy:  A side-by-side comparison of Single-Port vs multi-port approaches</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwNQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V14: Prostate Oncology/Penile &amp; Testis Oncology/Misc. Oncology II</td>
+                  <td>V14-12: First-in-Human Transcontinental Robotic HIFU Telesurgery: A New Era in Globalizing Focal Treatment for Prostate Cancer</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>08:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-01: Single Port Indiana Pouch: Demonstration of Technique and Feasibility</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>09:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>09:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY4Ng==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-03: Video-based en bloc resection of upper tract urothelial carcinoma using a flexible and navigable suction ureteral access sheath and thulium fiber laser with stereotactic ablative radiotherapy: Feasibility and early outcomes</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>09:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY5OA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-04: Robotic Parastomal Hernia Repair After Ileal Conduit Diversion Using Primary Defect Closure and Composite Mesh Reinforcement</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-05: Single Port Approach to Nephroureterectomy after Radical Cystectomy with Ileal Conduit</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-06: Geriatric assessment prior to major urologic surgery: A randomized clinical trial and step-by-step administration tool</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-07: Intracorporeal Isoperistaltic Ileal-Ileal Anastomosis: A Novel Technique for Restoration of Bowel</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:30</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMQ==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-08: Robot-assisted laparoscopic left ileal ureter replacement for suspected upper tract urothelial carcinoma</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:40</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-09: A novel ex vivo porcine neobladder simulation</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>10:50</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNg==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-10: Tips and Tricks to Optimize TURBt Spcimen Processing and Image Acquisition for Confocal Laser Microscopy</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>11:00</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMA==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-11: Step by Step: How to Perform a Single Port Nephroureterectomy</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>11:10</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNw==">Open</a></td>
+                </tr>
+                
+                <tr>
+                  <td>V15: Bladder &amp; Urothelial Upper Tract Oncology</td>
+                  <td>V15-12: Single Port Extraperitoneal Distal Ureterectomy with Ureteral Reimplant</td>
+                  <td>pending</td>
+                  <td>2026-05-18</td>
+                  <td>11:20</td>
+                  <td>207B</td>
+                  <td><a href="https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMQ==">Open</a></td>
+                </tr>
+                
+      </tbody>
+    </table>
+  </main>
+  <script>
+    document.querySelectorAll('.session-head').forEach((button) => {
+      button.addEventListener('click', () => {
+        const card = button.closest('.session-card');
+        card.classList.toggle('open');
+        button.setAttribute('aria-expanded', String(card.classList.contains('open')));
+      });
+    });
+    const q = document.getElementById('q');
+    q.addEventListener('input', () => {
+      const needle = q.value.trim().toLowerCase();
+      document.querySelectorAll('.session-card').forEach((card) => {
+        card.style.display = card.textContent.toLowerCase().includes(needle) ? '' : 'none';
+      });
+      document.querySelectorAll('#flat tbody tr').forEach((row) => {
+        row.style.display = row.textContent.toLowerCase().includes(needle) ? '' : 'none';
+      });
+    });
+  </script>
+</body>
+</html>

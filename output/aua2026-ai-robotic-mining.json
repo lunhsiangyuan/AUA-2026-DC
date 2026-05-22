@@ -1,0 +1,634 @@
+{
+  "meta": {
+    "total_abstracts": 3200,
+    "abstracts_with_fulltext": 1835,
+    "analysis_date": "2026-05-15",
+    "source": "/Users/lunhsiangyuan/Desktop/AUA2026itenary/output/aua2026-abstracts-fulltext.json"
+  },
+  "ai_ml_axis": {
+    "total_ai_ml": {
+      "count": 231,
+      "representative_abstracts": [
+        {
+          "title": "IP72-01: Mobile-based Assessment of Entrustable Professional Activities in  Urology Training: Implementation and Outcomes",
+          "session": "IP72: Education Research II",
+          "code": "IP72-01"
+        },
+        {
+          "title": "IP68-26: Incorporating PSMA PET/CT Parameters into Clinicopathologic Nomograms for Predicting Lymph Node Involvement in Intermediate- and High-Risk Prostate Cancer",
+          "session": "IP68: Prostate Cancer: Localized: Surgical Therapy III",
+          "code": "IP68-26"
+        },
+        {
+          "title": "IP32-16: Establishing a Clinician-prioritized Pediatric Urology Clinical Research Agenda",
+          "session": "IP32: Pediatrics II",
+          "code": "IP32-16"
+        }
+      ],
+      "note": "Union of all AI sub-categories below"
+    },
+    "ai_ml_core": {
+      "count": 131,
+      "representative_abstracts": [
+        {
+          "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-21"
+        },
+        {
+          "title": "GG01-30: Automating Clavien-Dindo Classification with Large Language Models: a faster and more reliable way for data collection",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-30"
+        },
+        {
+          "title": "GG01-31: Profile of Brazilian Men Seeking Online Help for Ejaculatory Disorders",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-31"
+        }
+      ]
+    },
+    "llm_gpt": {
+      "count": 51,
+      "representative_abstracts": [
+        {
+          "title": "GG01-30: Automating Clavien-Dindo Classification with Large Language Models: a faster and more reliable way for data collection",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-30"
+        },
+        {
+          "title": "GG02-12: Development of a ChatGPT-Based Assistant in Multidisciplinary Team Discussions in Oncological Urology: The UroMDT Advisor Study",
+          "session": "Global Gateway Posters Day 2",
+          "code": "GG02-12"
+        },
+        {
+          "title": "GG03-27: The Forgotten Suffering of Fournier’s Gangrene Survivors: A Systematic Review of Long-Term Outcomes and Quality-of-Life Impairment",
+          "session": "Global Gateway Posters Day 3",
+          "code": "GG03-27"
+        }
+      ]
+    },
+    "computer_vision_imaging": {
+      "count": 23,
+      "representative_abstracts": [
+        {
+          "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-21"
+        },
+        {
+          "title": "IP02-20: Immune Microenvironment Signatures of Response to Cretostimogene Grenadenorepvec in BCG-Unresponsive Non–Muscle Invasive Bladder Cancer",
+          "session": "IP02: Bladder Cancer: Non-invasive I",
+          "code": "IP02-20"
+        },
+        {
+          "title": "IP04-04: Development and validation of a deep learning tool for automated reading of fluorescence confocal microscopy images in radical prostatectomy",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-04"
+        }
+      ]
+    },
+    "predictive_modeling": {
+      "count": 37,
+      "representative_abstracts": [
+        {
+          "title": "GG01-15: Predictive Modelling of Functional Outcomes in HoLEP Versus Monopolar TURP: A Randomized Trial with ROC and Multivariate Statistical Analysis in Large-Volume BPH",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-15"
+        },
+        {
+          "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-21"
+        },
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        }
+      ]
+    },
+    "clinical_decision_support": {
+      "count": 53,
+      "representative_abstracts": [
+        {
+          "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-21"
+        },
+        {
+          "title": "GG01-44: Deep Machine Learning Ensemble Model for Emphysematous Pyelonephritis Classification and Clinical Decision Intelligence",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-44"
+        },
+        {
+          "title": "GG03-41: Validation of Stockholm3 for Prostate Cancer Detection in a Swiss Non-Referral Cohort: Balancing Biopsy Reduction and Diagnostic Performance",
+          "session": "Global Gateway Posters Day 3",
+          "code": "GG03-41"
+        }
+      ]
+    },
+    "nlp": {
+      "count": 6,
+      "representative_abstracts": [
+        {
+          "title": "IP23-29: Contextual Reasoning in a Locally Deployed Large Language Model Outperforms Manual Abstraction for Prostate Biopsy Pathology",
+          "session": "IP23: Prostate Cancer: Staging & Radiation Therapy",
+          "code": "IP23-29"
+        },
+        {
+          "title": "IP31-11: Trends in the Use of Active Surveillance for Management of Low-Risk Prostate Cancer within a Large National Health System",
+          "session": "IP31: Prostate Cancer: Localized: Active Surveillance",
+          "code": "IP31-11"
+        },
+        {
+          "title": "IP53-12: Automating standardization of prostate cancer biopsy and histopathology reports with privacy-preserving local large language models",
+          "session": "IP53: Imaging/Uroradiology II",
+          "code": "IP53-12"
+        }
+      ]
+    },
+    "top_applications": [
+      {
+        "application": "AI for MRI / imaging interpretation",
+        "count": 25,
+        "representative_abstracts": [
+          {
+            "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-21"
+          },
+          {
+            "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-38"
+          }
+        ]
+      },
+      {
+        "application": "AI for pathology / Gleason grading",
+        "count": 24,
+        "representative_abstracts": [
+          {
+            "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-21"
+          },
+          {
+            "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-38"
+          }
+        ]
+      },
+      {
+        "application": "AI for bladder cancer",
+        "count": 17,
+        "representative_abstracts": [
+          {
+            "title": "IP02-28: AI-informed Quantitative Mitosis Index Predicts BCG Maintenance Therapy benefit in High-Risk Non–Muscle-Invasive Bladder Cancer",
+            "session": "IP02: Bladder Cancer: Non-invasive I",
+            "code": "IP02-28"
+          },
+          {
+            "title": "IP02-30: Development of a Machine Learning-Driven, Nanoscale Imaging Platform for Non-invasive Bladder Cancer Diagnosis in a Prospective, Cross-sectional, Case-Controlled Study",
+            "session": "IP02: Bladder Cancer: Non-invasive I",
+            "code": "IP02-30"
+          }
+        ]
+      },
+      {
+        "application": "AI for outcome prediction / prognosis",
+        "count": 15,
+        "representative_abstracts": [
+          {
+            "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-21"
+          },
+          {
+            "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-38"
+          }
+        ]
+      },
+      {
+        "application": "AI for kidney stone analysis",
+        "count": 10,
+        "representative_abstracts": [
+          {
+            "title": "IP04-07: Developing an Artificial Intelligence Model for Intraoperative Identification of Urinary Stone Composition",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-07"
+          },
+          {
+            "title": "IP04-09: Convolutional Neural Network for CT-Guided Kidney Stone Identification and Needle Path Planning in Percutaneous Nephrolithotomy",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-09"
+          }
+        ]
+      },
+      {
+        "application": "AI for ultrasound / TRUS",
+        "count": 10,
+        "representative_abstracts": [
+          {
+            "title": "IP04-10: Deep Learning–Based Prediction of Surgical Necessity in Gray-Zone Bladder Outlet Obstruction Using Urodynamic Pressure–Flow Signals: A Prospective Multicentre Study",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-10"
+          },
+          {
+            "title": "IP04-21: Comparative validation of AI-assisted MRI screening pathways in the IP1-PROSTAGRAM study",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-21"
+          }
+        ]
+      },
+      {
+        "application": "AI for surgical planning / navigation",
+        "count": 9,
+        "representative_abstracts": [
+          {
+            "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-21"
+          },
+          {
+            "title": "IP04-08: Real-Time Image-Guided Robot-Assisted Partial Nephrectomy: Design and Methodology of the BISTOURY-CLINICAL Prospective Trial",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-08"
+          }
+        ]
+      }
+    ],
+    "llm_sub_applications": [
+      {
+        "application": "LLM for clinical decision / management",
+        "count": 7,
+        "representative_abstracts": [
+          {
+            "title": "IP04-11: A Tiered AI-Enhanced Curriculum for Urology Residents: Integrating ChatGPT to Improve Guideline Adherence and Clinical Reasoning",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-11"
+          },
+          {
+            "title": "IP04-19: AI-Assisted Stone Prevention: A Patient-Centric Assessment of LLM Performance on Urine Study Interpretations",
+            "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+            "code": "IP04-19"
+          }
+        ]
+      },
+      {
+        "application": "LLM for documentation / data extraction",
+        "count": 6,
+        "representative_abstracts": [
+          {
+            "title": "IP23-29: Contextual Reasoning in a Locally Deployed Large Language Model Outperforms Manual Abstraction for Prostate Biopsy Pathology",
+            "session": "IP23: Prostate Cancer: Staging & Radiation Therapy",
+            "code": "IP23-29"
+          },
+          {
+            "title": "IP57-19: Enhancing Research Education and Reporting Quality in Urology Conferences: Validating GPT-5 for Automated PRISMA Assessment of Systematic Review Abstracts (AUA & EAU 2021–2025)",
+            "session": "IP57: Education Research I",
+            "code": "IP57-19"
+          }
+        ]
+      },
+      {
+        "application": "LLM bias / ethics / limitations",
+        "count": 3,
+        "representative_abstracts": [
+          {
+            "title": "GG01-30: Automating Clavien-Dindo Classification with Large Language Models: a faster and more reliable way for data collection",
+            "session": "Global Gateway Posters Day 1",
+            "code": "GG01-30"
+          },
+          {
+            "title": "IP33-04: Evaluation of ChatGPT-5 Reliability in Urodynamic Study Interpretation",
+            "session": "IP33: Urodynamics/Lower Urinary Tract Dysfunction/Female Pelvic Medicine: Non-neurogenic Voiding Dysfunction (excluding OAB)",
+            "code": "IP33-04"
+          }
+        ]
+      },
+      {
+        "application": "LLM for patient education / readability",
+        "count": 1,
+        "representative_abstracts": [
+          {
+            "title": "IP51-02: Assessment of ChatGPT’s Effectiveness in Enhancing the Readability of Online Urologic Patient Education Materials: Can AI Make Urologic Health Information? More Accessible?",
+            "session": "IP51: Improving Access and Outcomes Across All Populations II",
+            "code": "IP51-02"
+          }
+        ]
+      },
+      {
+        "application": "LLM for education / training",
+        "count": 1,
+        "representative_abstracts": [
+          {
+            "title": "IP51-02: Assessment of ChatGPT’s Effectiveness in Enhancing the Readability of Online Urologic Patient Education Materials: Can AI Make Urologic Health Information? More Accessible?",
+            "session": "IP51: Improving Access and Outcomes Across All Populations II",
+            "code": "IP51-02"
+          }
+        ]
+      }
+    ],
+    "sessions_with_most_ai": [
+      {
+        "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+        "count": 27
+      },
+      {
+        "session": "IP57: Education Research I",
+        "count": 8
+      },
+      {
+        "session": "IP61: Health Services Research: Quality Improvement & Patient Safety II",
+        "count": 8
+      },
+      {
+        "session": "IP35: Bladder Cancer: Epidemiology & Evaluation I",
+        "count": 6
+      },
+      {
+        "session": "IP08: Imaging/Uroradiology I",
+        "count": 6
+      },
+      {
+        "session": "Global Gateway Posters Day 1",
+        "count": 6
+      },
+      {
+        "session": "IP32: Pediatrics II",
+        "count": 5
+      },
+      {
+        "session": "IP74: Health Services Research: Value of Care, Cost and Outcome Measures",
+        "count": 5
+      },
+      {
+        "session": "IP53: Imaging/Uroradiology II",
+        "count": 5
+      },
+      {
+        "session": "IP12: Stone Disease: Epidemiology & Evaluation I",
+        "count": 5
+      }
+    ]
+  },
+  "robotic_surgery_axis": {
+    "total_robotic": {
+      "count": 405,
+      "representative_abstracts": [
+        {
+          "title": "GG01-04: Expanding Same-Day-Discharge Aquablation BPH Surgery Outcomes in Ambulatory Surgical Centers: Updated Largest Experience Outcomes of 350 Consecutive Cases",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-04"
+        },
+        {
+          "title": "GG01-28: Urban–Rural Disparities in Prostate Cancer Outcomes: A Nationwide Population-Based Analysis",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-28"
+        },
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        }
+      ]
+    },
+    "single_port": {
+      "count": 105,
+      "representative_abstracts": [
+        {
+          "title": "IP03-26: Comparing Outcomes of Single-Port vs Multi-Port Robot-Assisted Simple Prostatectomy: A Prospective Single-Center Experience",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-26"
+        },
+        {
+          "title": "IP03-28: Predictors of Same-Day Discharge Trifecta Following Single Port Transvesical Robotic Simple Prostatectomy: A Report from the Single Port Advanced Research Consortium (SPARC)",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-28"
+        },
+        {
+          "title": "IP03-29: Development of a High-Fidelity Surgical Training Model for Single-Port Robot-Assisted Transvesical Simple Prostatectomy (SP-RASP)",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-29"
+        }
+      ]
+    },
+    "rarp": {
+      "count": 98,
+      "representative_abstracts": [
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        },
+        {
+          "title": "IP03-29: Development of a High-Fidelity Surgical Training Model for Single-Port Robot-Assisted Transvesical Simple Prostatectomy (SP-RASP)",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-29"
+        },
+        {
+          "title": "IP04-02: Predicting 1-year Erectile Function Recovery after Robotic-Assisted Radical Prostatectomy from Raw Surgical Video via an Automated, Artificial Intelligence-Based System",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-02"
+        }
+      ]
+    },
+    "rapn": {
+      "count": 47,
+      "representative_abstracts": [
+        {
+          "title": "IP04-08: Real-Time Image-Guided Robot-Assisted Partial Nephrectomy: Design and Methodology of the BISTOURY-CLINICAL Prospective Trial",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-08"
+        },
+        {
+          "title": "IP04-15: From Cystoscopy to Cystectomy: Enhancing Urologic Surgical Training with ChatGPT Across the Full Spectrum of  Procedures",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-15"
+        },
+        {
+          "title": "IP05-03: Robotic Partial Nephrectomy Defines a New Standard for Safety and Recovery: A Comprehensive Analysis of 1,441 Cases Across Three Surgical Approaches",
+          "session": "IP05: Kidney Cancer: Localized: Surgical Therapy I",
+          "code": "IP05-03"
+        }
+      ]
+    },
+    "robotic_cystectomy": {
+      "count": 32,
+      "representative_abstracts": [
+        {
+          "title": "GG03-07: The Evolving Epidemiology of Urolithiasis in the Americas: Insights from 2000-2035",
+          "session": "Global Gateway Posters Day 3",
+          "code": "GG03-07"
+        },
+        {
+          "title": "IP02-01: Metabolomics analysis identifies serum biomarkers predicting risk of intravesical tumorrecurrence after intravesical Bacillus Calmette–Guérin therapy (BCG) in patients withnon-muscle invasive bladder cancer",
+          "session": "IP02: Bladder Cancer: Non-invasive I",
+          "code": "IP02-01"
+        },
+        {
+          "title": "IP04-15: From Cystoscopy to Cystectomy: Enhancing Urologic Surgical Training with ChatGPT Across the Full Spectrum of  Procedures",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-15"
+        }
+      ]
+    },
+    "new_platforms": {
+      "count": 16,
+      "representative_abstracts": [
+        {
+          "title": "IP04-08: Real-Time Image-Guided Robot-Assisted Partial Nephrectomy: Design and Methodology of the BISTOURY-CLINICAL Prospective Trial",
+          "session": "IP04: Surgical Technology & Simulation: Artificial Intelligence",
+          "code": "IP04-08"
+        },
+        {
+          "title": "IP40-25: Robot-Assisted Radical Nephrectomy with Level II Caval Thrombectomy Using the Hugo™ RAS System: First Experience and Step-by-Step Surgical Technique",
+          "session": "IP40: Kidney Cancer: Localized: Surgical Therapy III",
+          "code": "IP40-25"
+        },
+        {
+          "title": "IP41-03: A comparative analysis of da Vinci vs. hinotori surgical robotic systems for perioperative outcomes of robot-assisted radical cystectomy: a propensity score-matched analysis.",
+          "session": "IP41: Bladder Cancer: Invasive II",
+          "code": "IP41-03"
+        }
+      ],
+      "platform_mention_counts": {
+        "Hugo RAS (Medtronic)": 12,
+        "TOUMAI (MicroPort)": 5,
+        "Hinotori (Medicaroid)": 2
+      }
+    },
+    "outcomes_vs_technique": {
+      "outcomes_studies": 228,
+      "technique_descriptions": 135
+    },
+    "training_learning_curve": {
+      "count": 44,
+      "representative_abstracts": [
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        },
+        {
+          "title": "IP03-24: Resident Surgical Learning Curve for Robotic-Assisted Simple Prostatectomy",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-24"
+        },
+        {
+          "title": "IP03-29: Development of a High-Fidelity Surgical Training Model for Single-Port Robot-Assisted Transvesical Simple Prostatectomy (SP-RASP)",
+          "session": "IP03: Benign Prostatic Hyperplasia: Surgical Therapy & New Technology I",
+          "code": "IP03-29"
+        }
+      ]
+    },
+    "top_sessions": [
+      {
+        "session": "IP79: Prostate Cancer: Localized: Surgical Therapy IV",
+        "count": 22
+      },
+      {
+        "session": "IP65: Kidney Cancer: Localized: Surgical Therapy IV",
+        "count": 21
+      },
+      {
+        "session": "IP75: Surgical Technology & Simulation: Instrumentation & Technology II",
+        "count": 21
+      },
+      {
+        "session": "IP68: Prostate Cancer: Localized: Surgical Therapy III",
+        "count": 20
+      },
+      {
+        "session": "IP05: Kidney Cancer: Localized: Surgical Therapy I",
+        "count": 16
+      },
+      {
+        "session": "IP11: Transplantation & Vascular Surgery",
+        "count": 15
+      },
+      {
+        "session": "IP45: Reconstruction: Ureteral Reconstruction (including pyeloplasty) and Bladder Reconstruction (including trauma-related fistula)",
+        "count": 13
+      },
+      {
+        "session": "IP17: Prostate Cancer: Localized: Surgical Therapy I",
+        "count": 12
+      },
+      {
+        "session": "V11: Upper Tract Reconstruction II",
+        "count": 11
+      },
+      {
+        "session": "V01: Upper Tract Reconstruction I",
+        "count": 10
+      }
+    ]
+  },
+  "cross_cutting": {
+    "ai_plus_robotic_combined": {
+      "count": 15,
+      "representative_abstracts": [
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        },
+        {
+          "title": "IP75-23: Locally Deployed Large Language Model Outperforms Manual Abstraction for Extracting Operative Details from Robotic Radical Prostatectomy Notes",
+          "session": "IP75: Surgical Technology & Simulation: Instrumentation & Technology II",
+          "code": "IP75-23"
+        },
+        {
+          "title": "IP05-05: Machine Learning–Based Predictive Model for Trifecta Achievement in Robot-Assisted Partial Nephrectomy",
+          "session": "IP05: Kidney Cancer: Localized: Surgical Therapy I",
+          "code": "IP05-05"
+        }
+      ]
+    },
+    "ai_assisted_robotic_surgery": {
+      "count": 60,
+      "representative_abstracts": [
+        {
+          "title": "GG01-21: Artificial intelligence–derived tumor volume in multiparametric MRI: validation and multimodal applications for nodal and extracapsular extension prediction in prostate cancer",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-21"
+        },
+        {
+          "title": "GG01-38: Leveraging Machine Learning Algorithms to Predict the Risk of Pathological Extraprostatic Extension After Robotic-Assisted Radical Prostatectomy",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-38"
+        },
+        {
+          "title": "GG01-44: Deep Machine Learning Ensemble Model for Emphysematous Pyelonephritis Classification and Clinical Decision Intelligence",
+          "session": "Global Gateway Posters Day 1",
+          "code": "GG01-44"
+        }
+      ]
+    },
+    "cost_effectiveness": {
+      "count": 24,
+      "representative_abstracts": [
+        {
+          "title": "IP72-24: Organization and evaluation of an anatomy conference for surgical interns: the vertical approach",
+          "session": "IP72: Education Research II",
+          "code": "IP72-24"
+        },
+        {
+          "title": "IP44-18: Geographic and Clinical Predictors of One-Day Discharge in Radical Prostatectomy",
+          "session": "IP44: Prostate Cancer: Epidemiology & Natural History",
+          "code": "IP44-18"
+        },
+        {
+          "title": "IP58-23: Decoding FDA Penile Prosthesis Recall Classifications: A Framework for Clinical Decision-Making (2004-2024)",
+          "session": "IP58: Sexual Function/Dysfunction: Surgical Therapy II",
+          "code": "IP58-23"
+        }
+      ]
+    }
+  }
+}

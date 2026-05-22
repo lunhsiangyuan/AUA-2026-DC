@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GG01-09 / GG01-30 中文完整翻譯</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #101418;
+      --panel: #171d23;
+      --panel-2: #1f2830;
+      --text: #edf2f7;
+      --muted: #aab7c4;
+      --line: #33414e;
+      --accent: #7cc7b2;
+      --accent-2: #f2c36b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, "PingFang TC", "Noto Sans TC", "Microsoft JhengHei", sans-serif;
+      line-height: 1.65;
+    }
+
+    .main {
+      width: min(1040px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 28px 0 48px;
+    }
+
+    .doc-header {
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 20px;
+      margin-bottom: 26px;
+    }
+
+    h1, h2, h3 {
+      line-height: 1.25;
+      margin: 0;
+      letter-spacing: 0;
+    }
+
+    h1 {
+      font-size: clamp(28px, 4vw, 44px);
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      color: var(--accent);
+      font-size: 28px;
+      margin-top: 34px;
+      margin-bottom: 12px;
+    }
+
+    h3 {
+      color: var(--accent-2);
+      font-size: 20px;
+      margin-top: 24px;
+      margin-bottom: 8px;
+    }
+
+    p {
+      margin: 8px 0;
+    }
+
+    ul, ol {
+      margin: 8px 0 16px;
+      padding-left: 1.35rem;
+    }
+
+    li {
+      margin: 5px 0;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0 20px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+    }
+
+    th, td {
+      border-bottom: 1px solid var(--line);
+      padding: 10px 12px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: var(--panel-2);
+      color: var(--text);
+      font-weight: 650;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .source {
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .poster {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 22px;
+      margin: 22px 0;
+    }
+
+    .code {
+      display: inline-block;
+      color: var(--bg);
+      background: var(--accent);
+      font-weight: 700;
+      border-radius: 6px;
+      padding: 2px 8px;
+      margin-bottom: 8px;
+    }
+
+    .authors {
+      color: var(--muted);
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    .note {
+      color: var(--muted);
+      border-left: 3px solid var(--accent);
+      padding-left: 12px;
+      margin: 12px 0;
+    }
+
+    @media (max-width: 720px) {
+      .main {
+        width: min(100% - 22px, 1040px);
+        padding-top: 18px;
+      }
+
+      .poster {
+        padding: 16px;
+      }
+
+      table {
+        display: block;
+        overflow-x: auto;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="main" role="main">
+    <div class="doc-header">
+      <h1>GG01-09 / GG01-30 中文完整翻譯</h1>
+      <p class="source">來源：<code>scraper/data/posters/GG01-09.pdf</code>、<code>scraper/data/posters/GG01-30.pdf</code>；以 PDF 文字抽取內容整理，保留原始數字、模型名稱、統計指標與聯絡資訊。</p>
+    </div>
+
+    <div class="poster" id="gg01-09">
+      <span class="code">GG01-09</span>
+      <h2>WASHOUT 研究：急診血尿的早期主動介入可降低住院天數、死亡率與再入院率</h2>
+      <p class="authors">Yazan Qaoud, Luke T. Lavallée, Nikita R Bhatt, Kevin Byrnes, Simona Ippoliti, Raghav Varma, Bing Jie Chow, Quentin Mak, Nikki Kerdegari, Aqua Asif, Arjun Nathan, Alexander Ng, Anna Ireland, Joanne Cresswell, Amrut Phonde, Kumar Madhavan, Piyush Bhargav Sarmah, Molly Nichols, James Green, Ahmed Ahmayda, Graeme MacLennan, Kevin Gallagher, Sinan Khadhouri, Veeru Kasivisvanathan</p>
+
+      <h3>前言</h3>
+      <ul>
+        <li>肉眼血尿佔泌尿科急診住院的 15%（每 1000 人超過 4 例）。</li>
+        <li>少於 30% 的患者有潛在惡性腫瘤。</li>
+        <li>肉眼血尿與顯著的罹病風險、死亡率與醫療資源使用有關。</li>
+        <li>現有指引主要強調診斷評估，但缺乏標準化的住院處置指引。</li>
+      </ul>
+
+      <h3>研究目標</h3>
+      <ol>
+        <li>描述因血尿住院患者的國際臨床處置模式。</li>
+        <li>檢視不同照護方式的差異如何影響患者預後。</li>
+      </ol>
+
+      <h3>方法</h3>
+      <ul>
+        <li>前瞻性、國際、多中心世代研究，收案地點為二級與三級照護中心。</li>
+        <li>統計分析：住院天數使用 Poisson regression；死亡率與再入院使用 logistic regression。</li>
+      </ul>
+
+      <h3>結果</h3>
+      <ul>
+        <li>12 個月期間，共在 382 個中心收案 8500 名患者。</li>
+        <li>年齡中位數為 75 歲（IQR 64-83）；多數為男性（83%），且多有共病（CCI 5 ± 3.1）。</li>
+        <li>初始表現：5% 有敗血症、5% 血流動力學不穩定、11% 需要高依賴照護、21% 接受輸血。</li>
+        <li>25% 有潛在惡性腫瘤，其中多數為泌尿上皮癌。</li>
+      </ul>
+
+      <h3>主要與次要結果</h3>
+      <table>
+        <thead>
+          <tr>
+            <th>指標</th>
+            <th>結果</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>住院天數中位數（IQR）</td>
+            <td>4 天（2-7）</td>
+          </tr>
+          <tr>
+            <td>90 天再入院</td>
+            <td>15%</td>
+          </tr>
+          <tr>
+            <td>90 天死亡率</td>
+            <td>10.59%</td>
+          </tr>
+          <tr>
+            <td>靜脈血栓栓塞與中風</td>
+            <td>3.28%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>住院處置</h3>
+      <ul>
+        <li>保守病房治療在 35% 的患者中成功。</li>
+        <li>53% 接受影像檢查評估。</li>
+        <li>35% 接受處置性介入。</li>
+      </ul>
+
+      <h3>確定性治療時間的影響</h3>
+      <p>與較早接受確定性處置者相比，等待超過 2 天才接受確定性處置的患者，住院天數增加 5.6 天，90 天死亡機率增加 2.5%，再入院風險增加 3.1%。</p>
+
+      <h3>圖表說明</h3>
+      <ul>
+        <li>圖 1：歐洲各地住院天數的變異。</li>
+        <li>圖 2：影響住院天數因素的 beeswarm plots。</li>
+      </ul>
+
+      <h3>較差預後的預測因子</h3>
+      <ol>
+        <li>衰弱、敗血症、上泌尿道阻塞、未接受影像檢查，以及潛在惡性腫瘤，與住院天數增加及死亡率上升相關。</li>
+        <li>抗血小板或抗凝血藥物使用、放射線治療病史、首次就診狀態，以及初次住院時間較長，與 90 天再入院率上升相關。</li>
+      </ol>
+
+      <h3>結論與重點</h3>
+      <ul>
+        <li>這是目前最大的血尿住院患者前瞻性多中心研究。</li>
+        <li>急診血尿與顯著罹病負擔、高再入院率，以及重要的惡性腫瘤負擔相關。</li>
+        <li>影像檢查與確定性治療延遲，與較差預後相關。</li>
+        <li>本研究首次將特定住院處置決策與可量測的患者預後連結起來。</li>
+        <li>需要建立實證指引，以標準化住院血尿患者的處置。</li>
+      </ul>
+
+      <h3>限制</h3>
+      <p>觀察性研究設計限制了因果關係的評估。雖然多中心參與提高了研究的外部效度，並提供真實世界資料，但結果中仍存在顯著且多因素造成的異質性。</p>
+
+      <h3>致謝與聯絡資訊</h3>
+      <p>Yazanqaoud@gmail.com<br>+1 437-848-1864<br>bursturology.com/project/washout/</p>
+    </div>
+
+    <div class="poster" id="gg01-30">
+      <span class="code">GG01-30</span>
+      <h2>以大型語言模型自動化 Clavien-Dindo 分級：更快速且更可靠的資料收集方式</h2>
+      <p class="authors">Gustavo Perrone, Alexandre Danilovic, Lucas Dias, Giovanni Marchini, Fabio Torricelli, Carlos Batagello, Fabio Vicentini, Rodrigo Perrella, William C Nahas, Eduardo Mazzucchi</p>
+
+      <h3>前言</h3>
+      <p>Clavien-Dindo 分級的評分者間一致性僅達中等程度。這使得任何以此作為研究終點的結論，其可靠性都受到質疑。本研究旨在探索大型語言模型用於 Clavien-Dindo 分級的可行性，並以醫師表現作為基準進行比較。</p>
+
+      <h3>方法</h3>
+      <p>研究評估 ChatGPT、Copilot、DeepSeek、Gemini、Grok 與 Llama，包含四個步驟：定義 Clavien-Dindo 各等級、分類併發症、分類病例摘要，以及在提供情境提示的情況下分類相同病例摘要。臨床 vignette 取自一項已發表、針對經皮腎造瘻取石術併發症的共識分類。研究使用 Gwet's AC2 coefficient 測量一致性，並與泌尿科主治醫師及泌尿科住院醫師比較。</p>
+
+      <h3>結果</h3>
+      <ul>
+        <li>所有模型都能準確定義 Clavien-Dindo 分級，並能以近乎完美的準確度，對併發症描述與病例摘要進行分級；整體一致性為 0.97 至 0.98。</li>
+        <li>8 名主治醫師與 15 名住院醫師也分類相同 vignettes，其準確度低於聊天機器人（p &lt; 0.001）。</li>
+        <li>模型延遲時間介於 0.77 至 3.90 分鐘；最快的醫師完成相同任務需 17 分鐘。</li>
+        <li>模型的評分者內一致性近乎完美，介於 0.98 至 0.99。</li>
+        <li>聊天機器人彼此之間的評分者間一致性為 0.98（95% CI: 0.97-0.99），顯著高於醫師之間的一致性 0.93（95% CI: 0.92-0.94）。</li>
+      </ul>
+
+      <h3>圖表說明</h3>
+      <p>圖 1：小提琴圖呈現大型語言模型與醫師（主治醫師與住院醫師）在分類準確度與分類時間上的分布。</p>
+
+      <h3>結論</h3>
+      <p>在實驗環境中，大型語言模型在 Clavien-Dindo 分級上展現潛力，可能比醫師更快速、更準確，也更精確。</p>
+
+      <h3>致謝</h3>
+      <p>本研究由 São Paulo Research Foundation 支持（FAPESP, 2023/13960-4）。</p>
+
+      <h3>倫理核准</h3>
+      <p>本研究已獲 Hospital das Clínicas da Faculdade de Medicina da USP 的 IRB 核准（91048325.0.0000.0068）。</p>
+
+      <h3>利益揭露</h3>
+      <p>作者聲明無相關財務或非財務利益需揭露。</p>
+    </div>
+  </div>
+</body>
+</html>

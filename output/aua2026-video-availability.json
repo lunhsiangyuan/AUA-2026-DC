@@ -1,0 +1,2069 @@
+{
+  "meta": {
+    "generated_at_utc": "2026-05-16T13:05:52+00:00",
+    "source": "output/aua2026-abstracts-fulltext.json",
+    "total_abstracts": 3200,
+    "video_session_abstracts": 191,
+    "video_sessions_in_source": 16,
+    "status_counts": {
+      "pending": 191
+    },
+    "compliance_note": "Report uses existing local metadata only; it does not extract playback IDs, HLS URLs, or recording files from authenticated Swapcard pages."
+  },
+  "sessions": [
+    {
+      "session_title": "Best Video Abstracts",
+      "abstract_count": 11,
+      "status_counts": {
+        "pending": 11
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg2OA==",
+          "code": "",
+          "title": "V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:00",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg2OQ==",
+          "code": "",
+          "title": "V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:10",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg2OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3MA==",
+          "code": "",
+          "title": "V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:20",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3MQ==",
+          "code": "",
+          "title": "V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:30",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3Mg==",
+          "code": "",
+          "title": "V05-01: Reduction Corporoplasty in Congenital Mega Corpora",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:40",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3Mw==",
+          "code": "",
+          "title": "V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "13:50",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3NA==",
+          "code": "",
+          "title": "V07-01: Renal Tumor with Level IV Thrombus: Comparing the Transdiaphragmatic and Sternotomy Approaches",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "14:00",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3NQ==",
+          "code": "",
+          "title": "V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "14:10",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3Ng==",
+          "code": "",
+          "title": "V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "14:20",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3Nw==",
+          "code": "",
+          "title": "V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "14:30",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDQwNTg3OA==",
+          "code": "",
+          "title": "V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "14:40",
+          "place": "Hall B, The Square, Learning Lab",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDQwNTg3OA=="
+        }
+      ]
+    },
+    {
+      "session_title": "V01: Upper Tract Reconstruction I",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzg5Nw==",
+          "code": "",
+          "title": "V01-01: Robotic Parastomal Hernia Repair of Ileal Conduit: Keyhole Technique with Novel Mesh Collar Modification",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzg5Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkwMw==",
+          "code": "",
+          "title": "V01-02: Single-Port Robotic Ureteroenteric Stricture Repair",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwMw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkwOQ==",
+          "code": "",
+          "title": "V01-03: Robotic ureterocalicostomy for complex proximal ureteral strictures: surgical experience and technical considerations",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkwOQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkxMQ==",
+          "code": "",
+          "title": "V01-04: Single Port Robotic Total Urinary Tract Reconstruction After Pelvic Crush Injury",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkxNg==",
+          "code": "",
+          "title": "V01-05: Single-Port Robotic-Assisted Transvaginal Retroperitoneal Ureteral Reimplantation: Early Experience",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkxNg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkyMA==",
+          "code": "",
+          "title": "V01-06: Robotic Right to Left Transureteroureterostomy with a Left Ureteral Reimplant in Bilateral Ureteral Stricture Disease",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "07:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkyMQ==",
+          "code": "",
+          "title": "V01-07: Robotic Appendiceal Onlay Flap for Salvage Ureteroplasty After Failed Buccal Mucosa Graft",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkyNQ==",
+          "code": "",
+          "title": "V01-08: Technical Considerations for Robotic Cystectomy with Intracorporeal Urinary Diversion in Congenital Intestinal Malrotation",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkyNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkzMg==",
+          "code": "",
+          "title": "V01-09: Single port robotic Non-transecting Pyeloplasty in Renal Transplant",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkzNQ==",
+          "code": "",
+          "title": "V01-10: Uupper Urinary Tract Reconstruction for the Treatment of Ureteral Stricture in a Duplex Collecting System: Our Experience",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4NzkzOA==",
+          "code": "",
+          "title": "V01-11: Bilateral Ureteral Stricture: Total Ureteral Replacement with Cecal Appendix – Video-Assisted Technique Description",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4NzkzOA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk0Mg==",
+          "code": "",
+          "title": "V01-12: Robotic assisted laparoscopic retroperitoneal non-transecting ureteroneocystostomy with onlay buccal mucosal ureteroplasty",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "08:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Mg=="
+        }
+      ]
+    },
+    {
+      "session_title": "V02: Urolithiasis/Endourology",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk0Ng==",
+          "code": "",
+          "title": "V02-01: Clinical efficacy of the Automatic Tissue Recognition Function in a Super-pulsed Thulium Fiber Laser: A Multicenter Lithotripsy Study",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "09:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk0OQ==",
+          "code": "",
+          "title": "V02-02: All-in-One Stone Management: Complete Endourological Procedure Using Only a Steerable Suctioning Ureteroscope",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "09:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk0OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk1Mw==",
+          "code": "",
+          "title": "V02-03: Retro-mini-percutaneous nephrolithotomy: description of the technique, case series, and advantages of retroperitoneoscopic assistance in the treatment of patients with retro-renal organs",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "09:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk1OA==",
+          "code": "",
+          "title": "V02-04: Robotic-Assisted Mini-Percutaneous Nephrolithotomy with the MONARCH™ Platform, Urology",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk1OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk2Mg==",
+          "code": "",
+          "title": "V02-05: Simultaneous bilateral endoscopic surgery: Mini-percutaneous nephrolithotomy with pulsed Thulium YAG and flexible ureteroscope with Thulium laser fiber",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk2Mw==",
+          "code": "",
+          "title": "V02-06: Fluoroscopic-Free Ultrasound-Guided Percutaneous Nephrolithotomy: Surgical Technique",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk2Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk3MA==",
+          "code": "",
+          "title": "V02-07: Miniaturizing ureteroscopy: Novel use of an 8/10Fr ureteral dilator as a ureteral access sheath with a 6.3Fr single-use flexible ureteroscope",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk3NA==",
+          "code": "",
+          "title": "V02-08: The Fast and the Frictionless: Capabilities of a 6.3Fr Single-Use Digital Flexible Ureteroscope",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk3Ng==",
+          "code": "",
+          "title": "V02-09: Tips and Techniques for Maximizing Efficiency with Flexible and Navigable Suction (FANS) Ureteral Access Sheaths",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "10:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk3Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk4MQ==",
+          "code": "",
+          "title": "V02-10: Robotic retrograde intrarenal surgery using flexible and navigable suction ureteral access sheath (Robotic FANS-RIRS): Initial feasibility assessment with Zamenix robotic flexible ureteroscopy platform in a porcine model",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "11:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk4Mw==",
+          "code": "",
+          "title": "V02-11: FAST-PCNL (Fluoroscopy free, Ambulatory, Supine, and Totally Tubeless Percutaneous Nephrolithotomy)",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "11:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4Nzk4NQ==",
+          "code": "",
+          "title": "V02-12: Flexible and Navigable Suction Ureteral Access Sheath (FANS): Tips and Tricks on Effective Usage",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "11:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4Nzk4NQ=="
+        }
+      ]
+    },
+    {
+      "session_title": "V03: Female Voiding Dysfunction/Pelvic Floor Disorders/Incontinence/Neuro-Urology",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA0OA==",
+          "code": "",
+          "title": "V03-01: Cross-Over Transobturator Autologous Rectus Fascia Sling: Step-by-Step Surgical Technique",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "15:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA0OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA4MQ==",
+          "code": "",
+          "title": "V03-02: Extraperitoneal Single-Port Robotic-Assisted Excision of Eroded Bladder Mesh",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "15:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA4NA==",
+          "code": "",
+          "title": "V03-03: Adjustable Continence Therapy for Stress Urinary Incontinence: A Minimally Invasive Solution",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "15:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA4OA==",
+          "code": "",
+          "title": "V03-04: Robotic fascial puboprostatic sling for neurogenic male stress urinary incontinence: a new era in treatment",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA4OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA5MQ==",
+          "code": "",
+          "title": "V03-05: Robotic repair of vesicovaginal fistula associated with late sacrocolpopexy mesh infection",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA5NQ==",
+          "code": "",
+          "title": "V03-06: Single-Port Robotic Female Bladder Neck Artificial Urinary Sphincter Placement in a Patient with Multiple Failed Incontinence Surgeries",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODA5OQ==",
+          "code": "",
+          "title": "V03-07: Microdebrider-assisted Colpocleisis: A Novel Technique",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODA5OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODEwNQ==",
+          "code": "",
+          "title": "V03-08: Surgical Explantation of an AdVance XP Male Sling For Delayed Urinary Obstruction",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODEwOQ==",
+          "code": "",
+          "title": "V03-09: Reviving the autologous tensor fascia lata sling: operative technique and outcomes",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "16:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEwOQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODExMQ==",
+          "code": "",
+          "title": "V03-10: Robotic excision of midurethral sling mesh: best practices and surgical principles",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "17:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODExNA==",
+          "code": "",
+          "title": "V03-11: Robotic-Assisted Pectopexy and Burch Colposuspension: A Simultaneous Technique with Intraoperative Cystoscopic Verification",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "17:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODExNw==",
+          "code": "",
+          "title": "V03-12: Robotic Assisted Laparoscopic Repair of a Uterovesical Fistula",
+          "status": "pending",
+          "date": "2026-05-15",
+          "time": "17:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODExNw=="
+        }
+      ]
+    },
+    {
+      "session_title": "V04: Lower Tract Reconstruction (including transgender) I",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODEyNQ==",
+          "code": "",
+          "title": "V04-01: Preputial Spiral Graft Urethroplasty for Panurethral Stricture: Surgical Technique and Long-Term Outcomes of a Single-Stage Approach in Our Largest Cohort",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE2NA==",
+          "code": "",
+          "title": "V04-02: Could the ‘Urachus-Based Peritoneal Hinge-Flap’ be Used for Bladder Augmentation?    Illustrated Proposed Technique and a Fresh Cadaver-Based Surgical Video",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE2Ng==",
+          "code": "",
+          "title": "V04-03: Combined Robotic/Endoscopic Urethral Reconstruction for Radiation-Induced Posterior Urethral Obstruction: A novel technique for challenging pathology",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE3Mg==",
+          "code": "",
+          "title": "V04-04: Single-Stage Pedicle Preputial Tube Substitution Urethroplasty with Corpora Cavernosa Augmentation Using Buccal Mucosa Graft for Primary Peno-Scrotal Hypospadias",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE3OQ==",
+          "code": "",
+          "title": "V04-05: Mucosal-Sparing Augmented Non-Transected Anastomotic (MsANTA) Urethroplasty: A Novel Non-Resective Technique for Short Bulbar Urethral Strictures",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE3Ng==",
+          "code": "",
+          "title": "V04-06: Robotic Vesicovaginal Fistula Repair with Buccal Graft Interposition",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE4NA==",
+          "code": "",
+          "title": "V04-07: Transvaginal Single Port robotic access for vesico-vaginal fistula repair",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE5MQ==",
+          "code": "",
+          "title": "V04-08: Transurethral cystotomy closure in a male patient: a case report",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE5NQ==",
+          "code": "",
+          "title": "V04-09: Project VISION - Visual instruction for stenosis intervention and optimization of neovaginal care after gender affirming  vaginoplasty",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE5OA==",
+          "code": "",
+          "title": "V04-10: Overview of key techniques for exposure, dissection, and suturing in posterior urethral reconstruction",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIwMw==",
+          "code": "",
+          "title": "V04-11: Beyond the Peritoneum: Non-Transperitoneal Single-Port Robotic Approaches in Urology",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIwNg==",
+          "code": "",
+          "title": "V04-12: Total Bulbospongiosus muscle sparing dorsal Onlay:Beyond the one sided dissection",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNg=="
+        }
+      ]
+    },
+    {
+      "session_title": "V05: Sexual Dysfunction/Infertility/Andrology",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODEyMg==",
+          "code": "",
+          "title": "V05-01: Reduction Corporoplasty in Congenital Mega corpora",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:00",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODEyMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE2Mg==",
+          "code": "",
+          "title": "V05-02: Inflatable Penile Prosthesis Implantation after Partial Penectomy and Radial Forearm Flap Reconstruction in a Young Male",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:10",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE2Nw==",
+          "code": "",
+          "title": "V05-03: Combined Inflatable Penile Prosthesis Implantation and Grafting for the Treatment of Severe Penile Curvature Associated with Erectile Dysfunction (iGrafter Technique)",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:20",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE2Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE3MA==",
+          "code": "",
+          "title": "V05-04: A Rare Case of Azoospermia Due to Isochromosome Yp: Robotic Excision of Associated Mullerian Duct Cyst and Review of Clinical Implications",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:30",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE3OA==",
+          "code": "",
+          "title": "V05-05: Penile Prosthesis Placement with Mesh-Type Relaxing Incisions in Peyronie’s Disease",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:40",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE3OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE4MA==",
+          "code": "",
+          "title": "V05-06: Microsurgical Denervation of the Spermatic Cord",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "07:50",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE4NQ==",
+          "code": "",
+          "title": "V05-07: Novel Application of an Amniotic Membrane Biological Graft in the Management of Peyronie's Disease",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:00",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE4OQ==",
+          "code": "",
+          "title": "V05-08: Percutaneous Adjustment of Testicular Implant in the Office (PATIO procedure)",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:10",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE4OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE5NA==",
+          "code": "",
+          "title": "V05-09: Management of penile constriction devices in the emergency department: A tertiary center experience",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:20",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODE5OQ==",
+          "code": "",
+          "title": "V05-10: Inflatable penile prosthesis crossover revision",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:30",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODE5OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIwMg==",
+          "code": "",
+          "title": "V05-11: A Rare Case of Penile Granulomatosis with Polyangitis: Case Report and Multidisciplinary Management Approach",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:40",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIwNw==",
+          "code": "",
+          "title": "V05-12: ICG-Guided Microsurgical Varicocelectomy with Audible Doppler Assistance: The Finalized and Optimized Technique after 350 Cases",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "08:50",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIwNw=="
+        }
+      ]
+    },
+    {
+      "session_title": "V06: BPH/Male Voiding Dysfunction/Infection/Misc. Imaging",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIxNA==",
+          "code": "",
+          "title": "V06-01: Advanced Anatomical Endoscopic Enucleation of the Prostate Simulation Model Development: Initial Assessment and Expert Evaluation",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI0NA==",
+          "code": "",
+          "title": "V06-02: Lateral View Fluoroscopy Reduces Reintervention for Paraurethral Balloon Placement in Male SUI",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI0Nw==",
+          "code": "",
+          "title": "V06-03: Ejaculatory hood sparing holmium laser enucleation of the prostate (HoLEP)",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI1Mg==",
+          "code": "",
+          "title": "V06-04: When Size Matters: Technical Refinements in Robot-Assisted Simple Prostatectomy for Large Prostatic Adenoma",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI1Nw==",
+          "code": "",
+          "title": "V06-05: Lower Anterior Access Single-Port Robotic Nephrectomy for Xanthogranulomatous Pyelonephritis",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI2MA==",
+          "code": "",
+          "title": "V06-06: Ejaculation Preserving Thulium Fiber Laser enucleation of BPH",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI2Ng==",
+          "code": "",
+          "title": "V06-07: Robotic Assisted HoLEP: A new Safe and Precise Approach with the Beacon Platform",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI3Mg==",
+          "code": "",
+          "title": "V06-08: Urethra-Sparing Robotic Adenomectomy: Redefining Sexual Function Preservation in the Surgical Treatment of Large Benign Prostatic Hyperplasia",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI3OQ==",
+          "code": "",
+          "title": "V06-09: SIAMLEP: Anatomical Simulator for Prostate Enucleation and Morcellation within a Single Training Device",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI4NA==",
+          "code": "",
+          "title": "V06-10: ALTERNATIVE FOR PROSTATIC MORCELLATION DURING MILEP 18.5Fr IN A PATIENT WITH URETHRAL STRICTURE",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI4Nw==",
+          "code": "",
+          "title": "V06-11: Empowering patients to reduce unplanned healthcare encounters after BPH surgeries",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI5MQ==",
+          "code": "",
+          "title": "V06-12: Holmium Laser Enucleation of the Prostate: Anatomical Foundations, Technical Description of the No Stress Incontinence Enucleation (NIcE) Technique, and Pilot Study Results in 38 Patients.",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MQ=="
+        }
+      ]
+    },
+    {
+      "session_title": "V07: Adrenal/Renal Oncology I",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODIxNQ==",
+          "code": "",
+          "title": "V07-01: Renal tumor with Level IV thrombus: Comparing the transdiaphragmatic and sternotomy approaches",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:30",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODIxNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI0Mg==",
+          "code": "",
+          "title": "V07-02: Advancing Single Port Retroperitoneal Surgery: A Consensus-based Hydrogel model for Low Anterior Access Partial Nephrectomy",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:40",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI0OQ==",
+          "code": "",
+          "title": "V07-03: Robot-Assisted Nephron-Sparing Surgery and Tumor Thrombectomy in Patient with Renal Angiomyolipoma and Inferior Vena Cava Tumor Thrombus: Surgical Technique and Preliminary Results",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "09:50",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI0OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI1MQ==",
+          "code": "",
+          "title": "V07-04: Low anterior access single port robotic nephroureterectomy",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:00",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI1OA==",
+          "code": "",
+          "title": "V07-05: Retroperitoneal Robot Assisted Partial Nephrectomy:  A side-by-side comparison of Single-Port vs multi-port approaches",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:10",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI1OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI2NQ==",
+          "code": "",
+          "title": "V07-06: Robot-Assisted Partial Nephrectomy Using Four Different Robotic Platforms: Institutional Experience and Feasibility",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:20",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI2Nw==",
+          "code": "",
+          "title": "V07-07: Minimally invasive partial nephrectomy under the guidance of augmented reality dynamic real-time navigation based on the deep-learning multi-structural tridimensional kidney model",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:30",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI2Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI3MA==",
+          "code": "",
+          "title": "V07-08: 3D-Image guided robot-assisted heminephrectomy with IVC thrombectomy on a single kidney",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:40",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI3OA==",
+          "code": "",
+          "title": "V07-09: Advanced renal cell carcinoma with retrohepatic inferior vena cava thrombus: technical pearls of robotic level 3 inferior vena cava thrombectomy using suprahepatic caval Control",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "10:50",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI3OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI4Mg==",
+          "code": "",
+          "title": "V07-10: Staged bilateral robot-assisted partial nephrectomy: a structured approach for multifocal bilateral renal tumors",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:00",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI4OQ==",
+          "code": "",
+          "title": "V07-11: Completely true single-port partial nephrectomy via low anterolateral access for T1B kidney tumors",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:10",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI4OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI5MA==",
+          "code": "",
+          "title": "V07-12: Open level III IVC thrombectomy in complex left renal mass",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "11:20",
+          "place": "209B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5MA=="
+        }
+      ]
+    },
+    {
+      "session_title": "V08: Misc. Benign/Transplant/Renovascular",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODI5Mw==",
+          "code": "",
+          "title": "V08-01: The World’s First Single-Port Robotic Simultaneous Kidney and Pancreas Transplantation",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODI5Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODMzMA==",
+          "code": "",
+          "title": "V08-02: Cystoscopic Transplant Ureteral Stent Insertion",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODMzMg==",
+          "code": "",
+          "title": "V08-03: Robotic Dual Kidney Transplant with Transvaginal Kidney Insertion",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODMzNQ==",
+          "code": "",
+          "title": "V08-04: Single-Port Robotic Ipsilateral Dual Kidney Transplantation",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODMzNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM0MQ==",
+          "code": "",
+          "title": "V08-05: Single Port Robotic Extraperitoneal Donor Nephrectomy",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM0NA==",
+          "code": "",
+          "title": "V08-06: The latest innovations in robot assisted kidney transplantation",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "13:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM0OA==",
+          "code": "",
+          "title": "V08-07: Single-Port Robot-Assisted Gonadal Vein Transposition",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM0OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM1MQ==",
+          "code": "",
+          "title": "V08-08: Robotic Inferior Mesenteric Vein Transposition to a Retroaortic Renal Vein for the Treatment of Nutcracker Syndrome",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM1Ng==",
+          "code": "",
+          "title": "V08-09: Robotic Nephropexy for Renal Ptosis",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM1Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM2MQ==",
+          "code": "",
+          "title": "V08-10: Fluorescence-Guided Laparoscopic Reconstruction in Pediatric Kidney Transplantation",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM2Mg==",
+          "code": "",
+          "title": "V08-11: Robotic Kidney Transplantation with Dual Renal Arteries Using a Third-Party Iliac Artery Graft in a Recipient with Extensive Iliac Calcification",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM2Ng==",
+          "code": "",
+          "title": "V08-12: Concomitant Holmium Laser Enucleation of Prostate (HoLEP) with transurethral incision or resection of diverticular neck and fulguration of Bladder Diverticulum (TUFD) for management of enlarged prostate and associated acquired bladder diverticulum",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "14:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM2Ng=="
+        }
+      ]
+    },
+    {
+      "session_title": "V09: Adrenal/Renal Oncology II",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODM3MQ==",
+          "code": "",
+          "title": "V09-01: Single-Port Robotic Assisted Extraperitoneal Right Adrenalectomy via Low Anterior Approach",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "15:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODM3MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQwMQ==",
+          "code": "",
+          "title": "V09-02: Robotic-assisted Laparoscopic Partial Nephrectomy of Transplant Kidney, Off-clamp",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "15:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQwNQ==",
+          "code": "",
+          "title": "V09-03: Kidney cancer with segmental venous invasion : tips and tricks for 3D Image-Guided Robotic Assisted Partial Nephrectomy (3D IGRAPN)",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "15:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQwOA==",
+          "code": "",
+          "title": "V09-04: Robotic Assisted Retroperitoneal Sarcoma Resection with Left Renal Vein Reconstruction With Bovine Pericardium",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQwOA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQxMg==",
+          "code": "",
+          "title": "V09-05: Robotic Suprarenal Cavectomy for Level III IVC Tumor Thrombus: Step-by-Step Technique and Technical Refinements",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQxNQ==",
+          "code": "",
+          "title": "V09-06: Intra-arterial cooling for renal hypothermia in robot assisted partial nephrectomy for completely endophytic tumors",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQxNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQyMA==",
+          "code": "",
+          "title": "V09-07: Vena cava thrombectomy and robot assisted radical nephrectomy using augmented reality guidance: Technique and Experience Sharing",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQyMQ==",
+          "code": "",
+          "title": "V09-08: Robot-Assisted Laparoscopic Pheochromocytoma and Paraganglioma Resection: A National Tertiary Referral Center Experience",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQyNg==",
+          "code": "",
+          "title": "V09-09: Single Port Robotic Retroperitoneal Partial Nephrectomy in Severely Obese Patient",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "16:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyNg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQyOQ==",
+          "code": "",
+          "title": "V09-10: Exploring the Feasibility of 3D Augmented Reality in Image-Guided Robot-Assisted Partial Nephrectomy: Initial prospective Clinical Experience and Outcomes of 3D AR-IGRAPN (UroCCR 112)",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "17:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQyOQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQzMg==",
+          "code": "",
+          "title": "V09-11: Transitioning from Multiport Robotic Partial Nephrectomy (MP-RAPN) to Single Port Partial Nephrectomy (SP-RAPN): The Rationale Behind the Indications",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "17:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQzNw==",
+          "code": "",
+          "title": "V09-12: Sutureless retroperitoneal robot assisted partial nephrectomy: initial experience with Veriset™ hemostatic patch",
+          "status": "pending",
+          "date": "2026-05-16",
+          "time": "17:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQzNw=="
+        }
+      ]
+    },
+    {
+      "session_title": "V10: Pediatrics",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ0MQ==",
+          "code": "",
+          "title": "V10-01: Robotic-Assisted Transabdominal Preperitoneal Hernia Repair for Recurrent Pediatric Inguinal Hernia",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ0MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ3Mg==",
+          "code": "",
+          "title": "V10-02: A Case of Severe Clitoral Adhesions and Lysis in a 7-year-old female",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ3NA==",
+          "code": "",
+          "title": "V10-03: Radiation-Sparing Management of Pediatric Bladder Rhabdomyosarcoma via Robot-Assisted Radical Cystectomy",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ3OA==",
+          "code": "",
+          "title": "V10-04: Intraoperative Diuretic Drainage Test to Guide Laparoscopic Vascular Hitch vs. Laparoscopic Dismembered Pyeloplasty in UPJO with Crossing Vessels",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ3OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ4Mg==",
+          "code": "",
+          "title": "V10-05: Robotic-assisted bladder neck closure and Mitrofanoff in a patient with prior bladder exstrophy repair",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ4Ng==",
+          "code": "",
+          "title": "V10-06: Managing the unexpected: Incidental appendicolithotomy during robotic Mitrofanoff with concurrent bladder onabotulinumtoxinA and cecostomy tube placement",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "07:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ4OQ==",
+          "code": "",
+          "title": "V10-07: Robotic Mitrofanoff Revision",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ4OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ5Mg==",
+          "code": "",
+          "title": "V10-08: Open Pyeloplasty in Infants and Small Children: An Operative Guide",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ5Nw==",
+          "code": "",
+          "title": "V10-09: A Minimally Invasive Milestone: Pediatric Single-Port Robotic Nephroureterectomy Using Low Anterior Access",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODQ5OA==",
+          "code": "",
+          "title": "V10-10: Robot-Assisted Partial Cystectomy in a 10-year-old: Managing a Rare Bladder Leiomyoma with Minimally Invasive Surgery",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODQ5OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODUwMg==",
+          "code": "",
+          "title": "V10-11: Bilateral Common Sheath Robotic-Assisted Laparoscopic Dismembered Extravesical Cross-Trigonal Ureteral Reimplantation of Complete Duplex Ureters",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODUwOA==",
+          "code": "",
+          "title": "V10-12: An acellular, small molecule directed approach to promote urinary bladder tissue regeneration in a non-human primate",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "08:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUwOA=="
+        }
+      ]
+    },
+    {
+      "session_title": "V11: Upper Tract Reconstruction II",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODUxMg==",
+          "code": "",
+          "title": "V11-01: Single-Port Robotic Bilateral Ileal Ureter",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "09:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODUxMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU0OQ==",
+          "code": "",
+          "title": "V11-02: Elbow Wide: Optimizing Dexterity and Ergonomics in Single-Port Robotic Surgery",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "09:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU0Ng==",
+          "code": "",
+          "title": "V11-03: Robotic Single-Port Low Anterior Access: A Novel Approach for Retroperitoneal Dismembered Pyeloplasty",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "09:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU0Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU1Mw==",
+          "code": "",
+          "title": "V11-04: Adaptation of Robotic Surgery Technique for Patients with Horseshoe Kidney",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU1Nw==",
+          "code": "",
+          "title": "V11-05: ROBOT-ASSISTED LAPAROSCOPIC END-TO-SIDE RIGHT ILEAL URETER IN PATIENT WITH PRIOR LEFT URETERAL REIMPLANT AND BOARI FLAP",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU1Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU2MA==",
+          "code": "",
+          "title": "V11-06: Robotic-Assisted Bilateral Ureteral Reconstruction into an Indiana Pouch with Ileal Ureter Interposition",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU2NA==",
+          "code": "",
+          "title": "V11-07: Nontransecting Anastomotic Augmentation Ureteroplasty - Joshi Step",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU2Nw==",
+          "code": "",
+          "title": "V11-08: Modified T-Pouch continent reservoir following robotic cystectomy",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU2Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU3NA==",
+          "code": "",
+          "title": "V11-09: Single Port Robotic Retroperitoneal Non-transecting Ureteroureterostomy",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "10:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU3Ng==",
+          "code": "",
+          "title": "V11-10: Back to the future: robotic augmented anastomotic buccal mucosal graft pyeloplasty after failed lower pole calycostomy",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "11:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU3OQ==",
+          "code": "",
+          "title": "V11-11: Modified Robot-assisted Dismembered Pyeloplasty (RALDP)for horseshoes kidney",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "11:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU3OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU4Mw==",
+          "code": "",
+          "title": "V11-12: Single-Port Robotic Non-Transecting Ureteral Reimplantation and Buccal Mucosa Graft Ureteroplasty for Double Ureteral Stricture",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "11:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Mw=="
+        }
+      ]
+    },
+    {
+      "session_title": "V12: Prostate Oncology/Penile & Testis Oncology/Misc. Oncology I",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODU4Nw==",
+          "code": "",
+          "title": "V12-01: Robotic Assisted Laparoscopic Extended Pelvic Lymph Node Dissection guided by preoperative marking of extra-template nodes with indocyanine green and coil - A safe way not to leave suspected lesions behind",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODU4Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc0MQ==",
+          "code": "",
+          "title": "V12-02: Simultaneous Step-by-Step Comparison of Four Robotic Platforms in Radical Prostatectomy: Da Vinci Xi, Da Vinci SP, Hugo™ RAS, and TOUMAI®",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc0Mg==",
+          "code": "",
+          "title": "V12-03: Single-Port Antegrade Robotic Lymphadenectomy (SPARL): a novel minimally-invasive approach to treat lymph nodes in men with penile cancer",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc0Nw==",
+          "code": "",
+          "title": "V12-04: Transvesical Single-Port Robotic-Assisted Radical Prostatectomy with Double Bladder Diverticulectomy",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc0Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc1NA==",
+          "code": "",
+          "title": "V12-05: Robotic-Assisted Excision of Pelvic Fibromatosis: A Feasible Organ-Sparing Approach for Complex Pelvic Tumors",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc1NQ==",
+          "code": "",
+          "title": "V12-06: Partial gland HIFU for ablation of prostate cancer: technique and outcomes",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "13:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc1OQ==",
+          "code": "",
+          "title": "V12-07: MRI and PSMA PET-Guided Focal Ablation of Localized Prostate Cancer Using Pulsed Electric Field (PEF) Therapy with Galvanize: A Novel Non-Thermal Image-Guided Approach",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc1OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc2Mw==",
+          "code": "",
+          "title": "V12-08: Intraoperative vascular complications in minimally invasive retroperitoneal lymph node dissection",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc2OA==",
+          "code": "",
+          "title": "V12-09: Diode LASER for the management of PeIN in the outpatient setting: a single centre experience",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc2OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc3Mg==",
+          "code": "",
+          "title": "V12-10: Salvage Single Port Transvesical Robotic Radical Prostatectomy Following High Intensity Focused Ultrasound (HIFU)",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc3NQ==",
+          "code": "",
+          "title": "V12-11: AI-to-AR integration for MRI–ultrasound fusion prostate biopsy: a surgeon-centered augmented reality platform using HoloLens 2 and Micro-Ultrasound",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc3OA==",
+          "code": "",
+          "title": "V12-12: AR-Guided Robot Assisted Retroperitoneal Lymph Node Dissection",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "14:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc3OA=="
+        }
+      ]
+    },
+    {
+      "session_title": "V13: Lower Tract Reconstruction (including transgender) II",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4ODc4NQ==",
+          "code": "",
+          "title": "V13-01: Split Pedicled preputial Graft: A new Technique for dual site strictures",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "15:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4ODc4NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA1Nw==",
+          "code": "",
+          "title": "V13-02: Non-transecting Bulbovesical Anastomosis for Extensive Posterior Urethral Stenosis: Surgical Technique and Outcomes Anticipating Artificial Urinary Sphincter Placement",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "15:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA1Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA2MA==",
+          "code": "",
+          "title": "V13-03: Robotic Dorsal Onlay Buccal Mucosal Graft Urethroplasty for Radiation-Induced Panurethral Stricture Disease in a Female",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "15:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA2Mw==",
+          "code": "",
+          "title": "V13-04: Simplified technique for corporal excision during vaginoplasty using a microdebrider",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA2OQ==",
+          "code": "",
+          "title": "V13-05: Single-Port Robotic Male Bladder Neck Artificial Urinary Sphincter",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA2OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA3Mw==",
+          "code": "",
+          "title": "V13-06: Mucosal-sparing augmented non-transected anastomotic (MsANTA) urethroplasty. Is true non-transecting urethroplasty possible?",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA3Nw==",
+          "code": "",
+          "title": "V13-07: Spray-on autologous buccal mucosa graft for substitution urethroplasty",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA3Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA4MA==",
+          "code": "",
+          "title": "V13-08: Novel Technique for Robotic Single Port Parastomal Hernia Repair Using Mesh Suture",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4MA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA4Mg==",
+          "code": "",
+          "title": "V13-09: Combined Salvage Colon Vaginoplasty and Management of Rectovaginal Fistula after Penile-Inversion & Peritoneal Vaginoplasty",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "16:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Mg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA4Nw==",
+          "code": "",
+          "title": "V13-10: Incision-sparing gracilis muscle flap harvest for urologic reconstruction",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "17:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4Nw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA4OA==",
+          "code": "",
+          "title": "V13-11: Single Port Robotic Trans-Anal Recto-Prostatic Fistula Repair",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "17:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA4OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTA5Mg==",
+          "code": "",
+          "title": "V13-12: Robotic Repair of Entero-Vesical Fistula Using a Novel Urachus-Based Peritoneal Hinge-Flap: A Surgical Video Presentation",
+          "status": "pending",
+          "date": "2026-05-17",
+          "time": "17:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTA5Mg=="
+        }
+      ]
+    },
+    {
+      "session_title": "V14: Prostate Oncology/Penile & Testis Oncology/Misc. Oncology II",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4OTEwMQ==",
+          "code": "",
+          "title": "V14-01: Cross-border Transcontinental Human Telesurgeries",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTEwMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM2NA==",
+          "code": "",
+          "title": "V14-02: Augmented-reality guided transperineal prostate biopsies: shifting the paradigm",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM2NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM3NQ==",
+          "code": "",
+          "title": "V14-03: How to Perform A Single-Port Retroperitoneal Lymph Node Dissection",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3NQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM3OQ==",
+          "code": "",
+          "title": "V14-04: Focal Irreversible Electroporation (IRE) for Prostate Cancer: Patient Selection & A Step-by-Step Surgical Approach",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM3OQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM4Mw==",
+          "code": "",
+          "title": "V14-05: Incidental Finding and Robotic-Assisted Management of a Duplex System with Ectopic Ureter Insertion into the Prostatic Urethra During Radical Prostatectomy: A Video Case Report",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4Mw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM4NA==",
+          "code": "",
+          "title": "V14-06: Single-Port Robotic Surgery in Awake Patients Using Virtual Reality: A Case Series of Patients Treated for Kidney and Prostate Cancer.",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "07:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4NA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM5MQ==",
+          "code": "",
+          "title": "V14-07: 3D-AR Guidance and VivaScope Digital Pathology for Real-Time Surgical Tailoring During Robotic Radical Prostatectomy: Feasibility Assessment and Preliminary Findings",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5MQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM4OA==",
+          "code": "",
+          "title": "V14-08: Technical details and 1-year outcome of “Early Prostatic Artery Control” technique during Robot-Assisted Radical Prostatectomy",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM4OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTM5OA==",
+          "code": "",
+          "title": "V14-09: Single Port Antegrade Robotic Lymphadenectomy (SPARL): surgical anatomy from cadaver dissection to clinical application",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTM5OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTQwMQ==",
+          "code": "",
+          "title": "V14-10: Robotic Retroperitoneal Lymph Node Dissection: Step-by-Step Technique and Surgical Pearls",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTQwNQ==",
+          "code": "",
+          "title": "V14-11: Extraperitoneal Robot Assisted Radical Prostatectomy:  A side-by-side comparison of Single-Port vs multi-port approaches",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQwNQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTQxMA==",
+          "code": "",
+          "title": "V14-12: First-in-Human Transcontinental Robotic HIFU Telesurgery: A New Era in Globalizing Focal Treatment for Prostate Cancer",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "08:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMA=="
+        }
+      ]
+    },
+    {
+      "session_title": "V15: Bladder & Urothelial Upper Tract Oncology",
+      "abstract_count": 12,
+      "status_counts": {
+        "pending": 12
+      },
+      "abstracts": [
+        {
+          "id": "UGxhbm5pbmdfNDM4OTQxMg==",
+          "code": "",
+          "title": "V15-01: Single Port Indiana Pouch: Demonstration of Technique and Feasibility",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "09:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTQxMg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTY4Ng==",
+          "code": "",
+          "title": "V15-02: CystoWeb, A Longitudinal Cystoscopy Video Database and Platform: A Powerful Tool for Surveillance, Education, and Research",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "09:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY4Ng=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTY5OA==",
+          "code": "",
+          "title": "V15-03: Video-based en bloc resection of upper tract urothelial carcinoma using a flexible and navigable suction ureteral access sheath and thulium fiber laser with stereotactic ablative radiotherapy: Feasibility and early outcomes",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "09:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTY5OA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcwMQ==",
+          "code": "",
+          "title": "V15-04: Robotic Parastomal Hernia Repair After Ileal Conduit Diversion Using Primary Defect Closure and Composite Mesh Reinforcement",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcwNA==",
+          "code": "",
+          "title": "V15-05: Single Port Approach to Nephroureterectomy after Radical Cystectomy with Ileal Conduit",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcwNw==",
+          "code": "",
+          "title": "V15-06: Geriatric assessment prior to major urologic surgery: A randomized clinical trial and step-by-step administration tool",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcwNw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcxMQ==",
+          "code": "",
+          "title": "V15-07: Intracorporeal Isoperistaltic Ileal-Ileal Anastomosis: A Novel Technique for Restoration of Bowel",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:30",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMQ=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcxMw==",
+          "code": "",
+          "title": "V15-08: Robot-assisted laparoscopic left ileal ureter replacement for suspected upper tract urothelial carcinoma",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:40",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxMw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcxNg==",
+          "code": "",
+          "title": "V15-09: A novel ex vivo porcine neobladder simulation",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "10:50",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNg=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcyMA==",
+          "code": "",
+          "title": "V15-10: Tips and Tricks to Optimize TURBt Spcimen Processing and Image Acquisition for Confocal Laser Microscopy",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "11:00",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMA=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcxNw==",
+          "code": "",
+          "title": "V15-11: Step by Step: How to Perform a Single Port Nephroureterectomy",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "11:10",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcxNw=="
+        },
+        {
+          "id": "UGxhbm5pbmdfNDM4OTcyMQ==",
+          "code": "",
+          "title": "V15-12: Single Port Extraperitoneal Distal Ureterectomy with Ureteral Reimplant",
+          "status": "pending",
+          "date": "2026-05-18",
+          "time": "11:20",
+          "place": "207B",
+          "swapcard_url": "https://app.swapcard.com/event/2026-annual-meeting-washington-dc/planning/UGxhbm5pbmdfNDM4OTcyMQ=="
+        }
+      ]
+    }
+  ]
+}

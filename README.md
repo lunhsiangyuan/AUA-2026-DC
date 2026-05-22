@@ -5,10 +5,33 @@
 ## 交付物
 
 - **PDF 手冊**：[`output/AUA2026-DC-Travel-Booklet-v1.pdf`](output/AUA2026-DC-Travel-Booklet-v1.pdf)（11 章，22 餐廳卡，20 must-see 景點）
+- **Video availability manifest**：[`output/aua2026-video-availability.html`](output/aua2026-video-availability.html)（metadata-only；不含串流 URL 或下載）
 - **原始 Markdown**：[`manuscript/booklet.md`](manuscript/booklet.md)
 - **圖片**：[`images/`](images/)（10 張 Wikipedia Commons 真照 + 後續可加 AI）
 
 ## 怎麼用
+
+### 看 video session availability
+
+```bash
+open output/aua2026-video-availability.html
+```
+
+### 重建 video availability manifest
+
+```bash
+python3 scripts/build-video-availability-report.py
+```
+
+### 監測 Plenary replay metadata
+
+```bash
+python3 scripts/monitor-plenary-video-availability.py
+# → output/aua2026-plenary-video-monitor.json
+# → output/aua2026-plenary-video-monitor.md
+```
+
+預設檢查會議當地今天的 Plenary；用 `--all-plenary` 可檢查全部 Plenary。這個 monitor 只看官方 metadata，不抽串流 URL、不下載影片。
 
 ### 看 PDF
 
